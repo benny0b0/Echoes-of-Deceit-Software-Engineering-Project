@@ -15,5 +15,5 @@ IDE: Intellij IDEA
 
 SDK: Oracle OpenJDK 23.0.1
 
-## Autori
-Pupella Benedetto, Di Gaudio Antonio, Megna Alessandro
+## Autore
+Pupella Benedetto
