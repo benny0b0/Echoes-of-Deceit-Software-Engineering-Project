@@ -1,0 +1,534 @@
+{
+  "historicCenter": {
+    "zones": {
+      "zone_3": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "Tracce di terra",
+            "description": "Il ladro del prezioso quadro ha lasciato delle impronte sulla scena del crimine. Queste impronte presentano un colore particolare che potrebbe rivelare indizi utili per risalire alla provenienza del responsabile. Il compito e' determinare con precisione da quale quartiere della citta' di Odill provengano le tracce.\n\nPer fare cio', utilizza le polaroid a disposizione: ognuna di esse rappresenta un dettaglio distintivo legato a un quartiere specifico della citta'. Analizza attentamente le immagini e clicca su quella, o su quelle, che ritieni possano essere collegate alle impronte.",
+            "solution": "3",
+            "hint": "Le tracce hanno un colore particolare...",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "center-hbox",
+                          "children": [
+
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hbox-p3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-p3-polaroid",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-p3",
+                                      "image": "accademiePolaroid.png",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-p3",
+                                      "image": "mercatoPolaroid.png",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-p3",
+                                      "image": "popolarePolaroid.png",
+                                      "actionId": "1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-p3-polaroid",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-p3",
+                                      "image": "nobiliarePolaroid.png",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-p3",
+                                      "image": "sobborghiPolaroid.png",
+                                      "actionId": "2"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-p3",
+                                      "image": "storicoPolaroid.png",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-p3-center",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageView",
+                                      "styleClass": "shoe-print",
+                                      "image": "shoePrint.png"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "Label",
+                                      "text": "Impronta",
+                                      "styleClass": "label-impronta"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Ingresso secondario",
+          "imageList": [
+            "historicCenter31.jpg"
+          ],
+          "imagesMap": {
+            "historicCenter31.jpg": {
+              "nextTypeOfScene": "Puzzle",
+              "diary": "\nHo trovato delle impronte di scarpa lasciate vicino l'ingresso secondario. Sono di uno stivale di taglia 44, presumibilmente un uomo. Il terriccio trovato nell'impronta corrisponde a due quartieri, i sobborghi e il popolare. Ora devo capire dove dirigermi.\n"
+            }
+          }
+        },
+        "numberOfItems": 0
+      },
+      "zone_2": {
+        "puzzle": [
+          {
+            "id": 2,
+            "title": "La guardia confusa",
+            "description": "La guardia, visibilmente confusa e spaventata, balbetta frasi sconnesse, le mani tremanti e lo sguardo perso. Le sue parole sembrano caotiche, ma ascoltandole attentamente capisci che potrebbero essere rilevanti per il mistero.\n\nSta a te riordinarle e trovare un senso: collegando le frasi, potresti scoprire un indizio cruciale per il tuo prossimo passo.\n\nClicca sui bottoni per dare priorita' alle frasi.",
+            "solution": "12345",
+            "hint": "Riordina le frasi utilizzando l'ordine cronologico.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "center-padding-hbox",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "padding-hbox",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "actionId": "5",
+                                  "styleClass": "button-guard-puzzle"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-string-center",
+                                  "text": "Svelato il quadro, mi sono accorto che non avevo piu' le chiavi dell'ingresso secondario."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "padding-hbox",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "actionId": "2",
+                                  "styleClass": "button-guard-puzzle"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-string-center",
+                                  "text": "Attirando l'attenzione di tutti per un istante."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "padding-hbox",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "actionId": "1",
+                                  "styleClass": "button-guard-puzzle"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-string-center",
+                                  "text": "Ieri un ragazzino e' inciampato vicino alla reception."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "padding-hbox",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "actionId": "4",
+                                  "styleClass": "button-guard-puzzle"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-string-center",
+                                  "text": "Dopo che mi sono alzato ho erroneamente urtato contro un uomo che impugnava una 24 ore."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "padding-hbox",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "actionId": "3",
+                                  "styleClass": "button-guard-puzzle"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-string-center",
+                                  "text": "Mi sono recato li' per verificare che stesse bene e mi sono calato per aiutarlo."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Ala centrale del museo",
+          "imageList": [
+            "historicCenter21.jpg"
+          ],
+          "imagesMap": {
+            "historicCenter21.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "diary": "\nHo parlato con la guardia ed era visibilmente nervosa mentre raccontava l'accaduto. Mi ha spiegato che ieri un ragazzino era inciampato vicino alla reception, attirando l'attenzione di tutti per un istante. Si era avvicinato per assicurarsi che stesse bene e, abbassandosi per aiutarlo, aveva perso di vista il resto.\nIl tono della sua voce si abbasso'. Quando si era rialzato, aveva urtato per errore un uomo con una ventiquattrore. Non gli aveva dato importanza sul momento... ma piu' tardi, quando avevano svelato il furto del quadro, si era accorto che non aveva piu' le chiavi dell'ingresso secondario.\nUn dettaglio importante. Troppo importante per essere ignorato.\nOra non ho scelta: devo recarmi all'ingresso secondario. Se c'e' una traccia lasciata da quell'uomo o da chiunque altro sia coinvolto, sara' li'. Ogni dettaglio potrebbe fare la differenza, e non posso permettermi di perdere altro tempo.\n"
+
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "guard.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Mi scusi, guardia. Puo' dirmi se ha notato qualcosa di strano o sospetto riguardo al furto del quadro?"
+              },
+              {
+                "speaker": "Guardia",
+                "id": 2,
+                "text": "Io... c'era... una valigetta... si, la chiave! E poi... il quadro... non lo so, e' sparito! Non so come sia successo!"
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Va bene, si calmi. Respiri. Mi racconti tutto con calma: chi aveva la valigetta? E questa chiave, di cosa si tratta?"
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 0
+      },
+      "zone_1": {
+        "puzzle": [
+          {
+            "id": 2,
+            "title": "La firma codificata",
+            "description": "Dopo l'annuncio del furto e la rimozione del telo che copriva il quadro, emerge una terribile verita': si tratta di una copia! Tuttavia, un dettaglio insolito cattura immediatamente l'attenzione di tutti... Al posto della firma originale del pittore, appare un insieme di lettere disposte in modo apparentemente casuale, prive di un significato logico evidente. Sta ora all'investigatore scoprire se esiste un nesso tra questo enigmatico messaggio e il furto dell'opera. ",
+            "solution": "desertedimoresussurranosegreti",
+            "hint": "Incrementa le lettere di ogni parola...",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "styleClass": "border-pane-1",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "hbox-words",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "CodedLabel",
+                              "text": "Lmamzbm",
+                              "styleClass": "words"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "CodedLabel",
+                              "text": "nswybo",
+                              "styleClass": "words"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "CodedLabel",
+                              "text": "npnnpmmvij",
+                              "styleClass": "words"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "CodedLabel",
+                              "text": "vhjuhwl",
+                              "styleClass": "words"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "bottom",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "hbox-key-buttons",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-key-buttons",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-key-buttons-2",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "- 1",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "+ 1",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-key-buttons",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-key-buttons-2",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "- 1",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "+ 1",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-key-buttons",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-key-buttons-2",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "- 1",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "+ 1",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-key-buttons",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-key-buttons-2",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "- 1",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle",
+                                      "text": "+ 1",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Stanza del quadro",
+          "imageList": [
+            "historicCenter11.jpg",
+            "historicCenter12.jpg"
+          ],
+          "imagesMap": {
+            "historicCenter11.jpg": {
+              "nextTypeOfScene": "Puzzle",
+              "diary": "\nHo analizzato il quadro con attenzione, cercando di cogliere ogni dettaglio che potesse tradire il mistero. Al posto della firma dell'artista, pero', ho trovato qualcosa di insolito: una serie di parole che a prima vista sembravano casuali, prive di significato. Ma non erano casuali.\nDopo un attento esame, ho capito che erano cifrate con il cifrario di Cesare. Decifrando il messaggio, ho ottenuto la frase: \"Deserte dimore nascondono segreti.\"\nIl significato era chiaro, ma allo stesso tempo lasciava spazio a troppi interrogativi. Cosa intende per \"deserte dimore\"? E, soprattutto, dove dovrei cercare?\n"
+            },
+            "historicCenter12.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Zone",
+              "current": 0,
+              "item": {
+                "name": "Lettera misteriosa",
+                "description": "Lettera scritta dal ladro e trovata accanto al quadro nel centro storico. Nel retro presenta strani numeri, apparentemente insensati.",
+                "image": "letterafr.png"
+              },
+              "diary": "\nHo raccolto la lettera e ho capito subito che c'era qualcosa di piu' di un semplice avvertimento. Le parole sono chiare, ho quattro giorni per trovare il quadro. Un ultimatum asciutto, ma carico di tensione.  \nDietro la lettera, pero', c'erano quei numeri. Scritte a mano cifre apparentemente senza senso. Ho provato a decifrarle, ma non ci sono riuscito. Forse un codice, forse una traccia, ma di certo non posso fare da solo.  \nAdesso il mio prossimo passo e' chiaro: devo trovare qualcuno che sappia qualcosa di piu'. Qualcuno che abbia visto o sentito dettagli di questo furto. Ogni minuto conta, e quei quattro giorni stanno gia' correndo via.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Nella lettera c'e' scritto che ho quattro giorni.... Devo trovare il quadro entro quattro giorni, altrimenti verra' distrutto. Dannazione. E quei numeri sul retro? Sembrano messi li' a caso, ma so che un senso ce l'hanno. Devo solo capire quale.\nTranquillo. Niente panico. E' solo un'altra sfida, e io sono bravo a risolvere i giochi degli altri. Ci riusciro', devo solo restare lucido."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 1
+      }
+    }
+  }
+}

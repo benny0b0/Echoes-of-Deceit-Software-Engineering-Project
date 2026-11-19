@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane fx:id="stackPane" style="-fx-min-height: 900; -fx-background-color: rgba(0,0,0,0.6);" styleClass="pauseMenu-stack-pane" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.PauseMenuController">
+    <children>
+        <TabPane focusTraversable="false" maxHeight="600.0" maxWidth="600.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="200.0" styleClass="tab-pane" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab styleClass="tab" text="Menu">
+                    <content>
+                        <BorderPane fx:id="zzz">
+                            <bottom>
+                                <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                                    <Button fx:id="btnExitPause" mnemonicParsing="false" styleClass="button-menu" text="Torna al gioco" />
+                                    <Button fx:id="btnMainMenu" mnemonicParsing="false" styleClass="button-menu" text="Menu principale">
+                                        <VBox.margin>
+                                            <Insets bottom="20.0" />
+                                        </VBox.margin></Button>
+                                </VBox>
+                            </bottom>
+                            <center>
+                                <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <Label fx:id="userNameLabel" styleClass="description-text-menu" />
+                                        <Label fx:id="remainingDaysLabel" styleClass="description-text-menu" />
+                                    </children>
+                                </VBox>
+                            </center>
+                            <top>
+                                <Label styleClass="title-label" text="Echoes of Deceit" BorderPane.alignment="CENTER">
+                                    <BorderPane.margin>
+                                        <Insets top="20.0" />
+                                    </BorderPane.margin>
+                                </Label>
+                            </top>
+                        </BorderPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="inventoryTab" styleClass="tab" text="Inventario">
+                    <content>
+                        <StackPane fx:id="inventoryStackPane">
+                     <children>
+                        <StackPane>
+                           <children>
+                              <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" styleClass="diary-box" StackPane.alignment="CENTER">
+                                 <content>
+                                    <VBox fx:id="vboxItems" spacing="40.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                           <StackPane.margin>
+                              <Insets bottom="30.0" left="25.0" right="25.0" top="10.0" />
+                           </StackPane.margin>
+                        </StackPane>
+                     </children>
+                     </StackPane>
+                    </content>
+                </Tab>
+                <Tab text="Taccuino">
+               <content>
+                  <StackPane>
+                     <children>
+                        <ScrollPane styleClass="diary-box" StackPane.alignment="CENTER">
+                           <content>
+                              <StackPane>
+                                 <children>
+                                    <TextFlow maxWidth="350.0">
+                                       <children>
+                                          <Text fx:id="diaryLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="description-text" text="" />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </StackPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="30.0" left="25.0" right="20.0" top="10.0" />
+                     </padding></StackPane>
+               </content>
+                </Tab>
+                <Tab text="Impostazioni">
+                    <content>
+                        <StackPane>
+                            <children>
+                                <BorderPane>
+                                    <top>
+                                        <VBox alignment="CENTER" spacing="40.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <VBox alignment="CENTER">
+                                                    <children>
+                                                        <Label style="-fx-font-size: 42px; -fx-text-fill: black; -fx-font-family: 'Alkhemikal';" styleClass="description-text" text="Audio">
+                                                            <VBox.margin>
+                                                                <Insets />
+                                                            </VBox.margin>
+                                                            <padding>
+                                                                <Insets top="40.0" />
+                                                            </padding></Label>
+                                                        <AnchorPane>
+                                                            <children>
+                                                                <Label style="-fx-text-fill: white;" styleClass="description-text" text="Volume musica" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+                                                                <HBox alignment="TOP_CENTER" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+                                                                    <children>
+                                                                        <Button fx:id="btnDecrementMusic" mnemonicParsing="false" style="-fx-text-fill: white;" styleClass="button-settings" text="-" />
+                                                                        <Label fx:id="musicVolumeLabel" alignment="CENTER" style="-fx-min-width:58px; -fx-text-fill: #F7F7E7;" styleClass="description-text">
+                                                                            <padding>
+                                                                                <Insets left="10.0" right="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <Button fx:id="btnInrementMusic" mnemonicParsing="false" style="-fx-text-fill: white;" styleClass="button-settings" text="+" />
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </AnchorPane>
+                                                        <AnchorPane>
+                                                            <children>
+                                                                <Label style="-fx-text-fill: white;" styleClass="description-text" text="Volume suoni" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+                                                                <HBox alignment="TOP_CENTER" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+                                                                    <children>
+                                                                        <Button fx:id="btnDecrementSound" mnemonicParsing="false" style="-fx-text-fill: white;" styleClass="button-settings" text="-" />
+                                                                        <Label fx:id="soundMusicLabel" alignment="CENTER" style="-fx-min-width:58px; -fx-text-fill: #F7F7E7;" styleClass="description-text">
+                                                                            <padding>
+                                                                                <Insets left="10.0" right="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <Button fx:id="btnInrementSound" mnemonicParsing="false" style="-fx-text-fill: white;" styleClass="button-settings" text="+" />
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER">
+                                                    <children>
+                                                        <Label style="-fx-font-size: 42px; -fx-text-fill: black; -fx-font-family: 'Alkhemikal';" styleClass="description-text" text="Schermo" />
+                                                        <AnchorPane>
+                                                            <children>
+                                                                <Label style="-fx-text-fill: white;" styleClass="description-text" text="Risoluzione" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+                                                                <HBox alignment="TOP_CENTER" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0">
+                                                                    <children>
+                                                                        <Label style="-fx-opacity: 0.6; -fx-text-fill: white;" styleClass="description-text" text="1920x1080">
+                                                                            <padding>
+                                                                                <Insets left="10.0" right="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </VBox>
+                                    </top>
+                                </BorderPane>
+                            </children>
+                        </StackPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</StackPane>

@@ -1,0 +1,606 @@
+{
+  "marketDistrict": {
+    "zones": {
+      "zone_1": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "L'anello",
+            "description": "Il commerciante ti dice questo:\n\"Non ricordo esattamente i simboli, ma so che il sigillo mi ha dato una forte impressione... sembrava rappresentare forza, equilibrio e un senso di protezione. Forse, se riesci a ricostruire il simbolo, potrei confermare se e' quello che ricordo\"\nScegli un simbolo per ogni categoria.",
+            "solution": "3",
+            "hint": "Segui gli indizi del commerciante",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "vbox-main-simboli-anello",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label",
+                              "styleClass": "title-simboli-anello",
+                              "text": "Seleziona un tipo per categoria"
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hbox-simboli-anello",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "title-label-Puzzle",
+                                  "text": "Animale"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "cervo.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "gatto.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "leone.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "1"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hbox-simboli-anello",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "title-label-Puzzle",
+                                  "text": "Oggetto"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "spada.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "pergamena.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "bilancia.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "1"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hbox-simboli-anello",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "title-label-Puzzle",
+                                  "text": "Sfondo"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "onda.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "stella.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-simboli-anello",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "image": "alloro.png",
+                                      "styleClass": "img-simboli-anello",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+
+
+          }
+        ],
+        "exploration": {
+          "roomName": "Negozio di inchiostri",
+          "imageList": [
+            "marketDistrict11.jpg"
+          ],
+          "imagesMap": {
+            "marketDistrict11.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 0,
+              "diary": "\n\nMERCATO\nSono andato al mercato e ho parlato con il negoziante degli inchiostri. Mi ha raccontato che la persona che ha acquistato quell'inchiostro aveva capelli color ambrato e occhi azzurri, un aspetto distintivo. Vestiva elegante, con una giacca abbinata a una particolare sciarpa blu. Il negoziante ha anche fatto caso a un anello che l'uomo indossava, un anello con un sigillo. Dopo un momento di riflessione, ha ricordato che quel sigillo e' legato ad una famiglia nobile. Questo dettaglio cambia le cose. Se il ladro ha davvero un legame con l'aristocrazia o proviene da una famiglia importante della citta', significa che potrebbe avere risorse e connessioni che complicano ulteriormente le indagini.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "pginchiostro.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Salve! Sono arrivato fino a qui grazie all'aiuto del calligrafo delle accademie."
+              },
+              {
+                "speaker": "Inchiostro",
+                "id": 2,
+                "text": "Salve! Ah, davvero? Ti ha mandato quel vecchio bacucco, eh? Come sta? L'hai trovato sobrio, almeno? Non credo, immagino nemmeno ti abbia detto che siamo amici. A volte si scorda pure il suo nome! Comunque, dimmi, come posso esserti utile."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Potrebbe aiutarmi ad analizzare l'inchiostro di questa lettera? Mi sarebbe utile sapere chi l'ha acquistato."
+              },
+              {
+                "speaker": "Inchiostro",
+                "id": 2,
+                "text": "Oh, questo inchiostro lo vendiamo solo a una cerchia ristretta di clienti abituali. L'ultima persona che l'ha acquistato era una persona molto elegante, ricordo che aveva gli occhi azzurri, capelli ambrati, una sciarpa blu abbinata alla giacca ed un anello con sigillo. Non ricordo esattamente i simboli di quest'ultimo, ma so che il sigillo mi ha dato una forte impressione... sembrava rappresentare forza, equilibrio e un senso di protezione. Forse, se riesci a ricostruire il simbolo, potrei confermare se e' quello che ricordo."
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "pginchiostro.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Grazie mille per il suo aiuto, davvero. E' stato molto gentile a condividere queste informazioni."
+              },
+              {
+                "speaker": "Inchiostro",
+                "id": 2,
+                "text": "Di nulla. Spero che le siano utili. Se ha bisogno di altro, sa dove trovarmi."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Lo terro' a mente. Buona giornata!"
+              }
+            ]
+          }
+
+        ]
+      },
+      "zone_2": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "Inseguimento",
+            "description": "Durante l'inseguimento, il ladro si dilegua attraversando una zona gremita di bancarelle. L'investigatore deve individuare il percorso piu' veloce per inseguirlo senza perderlo di vista. Ogni tragitto presenta ostacoli che comportano un costo, sia per superarli che per utilizzare eventuali oggetti lungo il cammino:\n\n- Ogni persona ha costo : 1\n- Ogni bancarella (con il relativo commerciante cerchiato di azzurro) ha costo: 3\n- Ogni casa ha costo: 2\n- Ogni chiesa ha costo: 10\n- Ogni utilizzo della scala ha costo: 1\n\nScegli a sinistra una entrata e a destra una uscita.",
+            "solution": "2",
+            "hint": "Fai i calcoli e scegli il percorso con un numero totale di costi degli ostacoli inferiore.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "top",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "center-hbox",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-button-inseguimento",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "1",
+                                  "actionId": 100
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "2",
+                                  "actionId": 1
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "3",
+                                  "actionId": 100
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "4",
+                                  "actionId": 100
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "StackPane",
+                              "styleClass":"stack-pane-inseguimento",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "ImageView",
+                                  "image": "mappaInseguimentoLadro.png"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-button-inseguimento",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "1",
+                                  "actionId": 1
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "2",
+                                  "actionId": 100
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "3",
+                                  "actionId": 100
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Button",
+                                  "styleClass": "button-inseguimento",
+                                  "text": "4",
+                                  "actionId": 100
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "bottom",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Strada secondaria",
+          "imageList": [
+            "marketDistrict21.jpg"
+          ],
+          "imagesMap": {
+            "marketDistrict21.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "diary": "\nAppena uscito dal negozio degli inchiostri, i miei occhi si sono posati su una figura familiare tra la folla. Capelli color ambrato, sciarpa blu, anello al dito: era lui, il ladro. Senza pensarci due volte, ho iniziato a inseguirlo.\nSi muoveva con agilita' tra la gente, cercando di confondersi, ma non l'ho perso di vista. Ogni passo mi avvicinava alla verita', ma sapevo che un errore sarebbe bastato per farlo svanire di nuovo.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Non ci posso credere... e' lui! Capelli ambrati, sciarpa blu, una 24 ore e' identico alla descrizione. Non puo' essere una coincidenza. Aspetta, mi ha visto... accidenti, sta scappando! FERMATI!"
+              }
+
+            ]
+          }
+        ]
+      },
+      "zone_3": {
+        "puzzle": [
+          {
+            "id": 3,
+            "title": "I mercanti",
+            "description": "Durante l'inseguimento, l'investigatore si trova a un bivio e si imbatte in un gruppo di cinque mercanti che discutono animatamente. Quando chiede informazioni sul sospetto, ognuno fornisce una dichiarazione, ma le loro versioni non coincidono.\nPer proseguire, l'investigatore deve capire chi sta dicendo la verita'.",
+            "solution": "d",
+            "hint": "Un mercante che dichiara che tutti mentono: pensaci bene. Se le sue parole fossero vere, si contraddirebbe. Un paradosso che non si risolve da se' potrebbe svelare una menzogna... o un bugiardo.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "StackPane",
+                          "styleClass": "main-stack-pane-mercanti",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-mercanti",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta-small",
+                                  "text": "A: Uno tra di noi sta mentendo"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta-small",
+                                  "text": "B: Due tra di noi stanno mentendo"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta-small",
+                                  "text": "C: Non dargli retta, tre tra di noi stanno mentendo"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta-small",
+                                  "text": "D: Non ascoltarli, quattro tra di noi stanno mentendo"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta-small",
+                                  "text": "E: Tutti noi stiamo mentendo!"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stack-pane-mercanti",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageView",
+                                      "styleClass": "mercanti-image",
+                                      "image": "mercanti.png"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "bottom",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "vbox-text-field-mercanti",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label",
+                              "styleClass": "label-impronta",
+                              "text": "Inserisci la lettera"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "TextField",
+                              "styleClass": "input-textfield-mercanti"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Piazza centrale",
+          "imageList": [
+            "marketDistrict31.jpg"
+          ],
+          "imagesMap": {
+            "marketDistrict31.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "diary": ""
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "mercanti.png",
+            "conversation": [
+              {
+                "speaker": "Mercanti",
+                "id": 2,
+                "text": "NO IO HO RAGIONE.... NO IO HO RAGIONE.... NO IO..."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Scusate sapete dirmi se avete visto passare un uomo con gli occhi azzurri, una sciarpa e una 24 ore?"
+              },
+              {
+                "speaker": "Mercanti",
+                "id": 2,
+                "text": "Si e' andato per di la'! No e' andato dalla parte opposta. Io non l'ho visto proprio..."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="stack-pane-game-over" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.WrongNobleDistrictController">
+    <children>
+        <BorderPane>
+            <top>
+                <Label styleClass="title-end-game" text="Hai perso" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="40.0" />
+               </BorderPane.margin></Label>
+            </top>
+            <center>
+                <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                    <Label styleClass="label-game-over" text="Nel quartiere nobiliare, l'investigatore si reco' alla bottega del commerciante di inchiostro. Quest'ultimo passo' l'intera giornata a cercare nel suo inventario, ma senza riuscire a trovare cio' che cercava. L'investigatore, rendendosi conto di aver commesso un errore, capi' che il negozio giusto si trovava nel quartiere del mercato.  Si diresse quindi verso il mercato, ma scopri' che il commerciante era in ferie e non poteva aiutarlo. Con i giorni ormai giunti al termine, l'investigatore raccolse tutto cio' che aveva trovato e si reco' alla polizia, sperando che le sue scoperte potessero fare la differenza. Tuttavia, dopo un'attenta analisi, gli agenti conclusero che le informazioni non erano sufficienti per fare progressi concreti. Il suo lavoro risulto' vano, e l'investigatore si trovo' costretto ad accettare la realta': le sue indagini non avevano portato ai risultati sperati. Ed il quadro, simbolo della citta' di Odill venne distrutto e perso per sempre." textAlignment="JUSTIFY" wrapText="true" BorderPane.alignment="CENTER" />
+               <BorderPane.margin>
+                  <Insets left="40.0" right="40.0" />
+               </BorderPane.margin>
+                </VBox>
+            </center>
+         <bottom>
+            <Button fx:id="loadCheckPoint" styleClass="button-game-over" mnemonicParsing="false" text="Carica l'ultimo punto di controllo" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="30.0" />
+               </BorderPane.margin></Button>
+         </bottom>
+        </BorderPane>
+    </children>
+</StackPane>

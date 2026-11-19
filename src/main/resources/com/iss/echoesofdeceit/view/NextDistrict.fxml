@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="mainStackPane" styleClass="stack-hint" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.NextDistrictController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <center>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" spacing="20.0" styleClass="vbox-hint" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 35px; -fx-font-weight: bold;" styleClass="description-text" text="Seleziona il prossimo quartiere" />
+                        <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="600.0" styleClass="scroll-pane-districtChoice">
+                            <content>
+                                <HBox fx:id="hboxOfDistricts" alignment="CENTER" styleClass="hbox-districtChoice" />
+                            </content>
+                        </ScrollPane>
+                        <Button fx:id="backToGameButton" alignment="CENTER" mnemonicParsing="false" styleClass="buttonPuzzle" text="Indietro" />
+                        <Button fx:id="backToMenuButton" alignment="CENTER" mnemonicParsing="false" styleClass="buttonPuzzle" text="Menu Principale" />
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</StackPane>

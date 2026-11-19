@@ -1,0 +1,1883 @@
+@font-face {
+    font-family: "Fondamento";
+    src: url("../fonts/Fondamento-Regular.ttf");
+}
+@font-face {
+    font-family: "Palanquin Dark Medium";
+    src: url("../fonts/PalanquinDark-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ByteBounce";
+    src: url("../fonts/ByteBounce.ttf");
+}
+
+@font-face {
+    font-family: "Alkhemikal";
+    src: url("../fonts/Alkhemikal.ttf");
+}
+
+/*
+* {-fx-border-color: red;
+  -fx-border-width: 1px;
+  -fx-border-style: solid;
+}
+*/
+
+.teamNameLabel{
+    -fx-font-size: 700%;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.5, 0, 0);
+    -fx-alignment: center;
+    -fx-font-family: "ByteBounce";
+}
+
+/*StartScene*/
+.startGame {
+    -fx-background-image: url("../images/MainMenu.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/* Scroll pane scelta salvataggi di un utente */
+.scroll-pane-choice-saves {
+    -fx-background-color: #f7f7e7;
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+    -fx-alignment: center;
+    -fx-border-color: transparent; /* Rimuovi il bordo per evitare problemi con il colore bianco */
+}
+
+/* Vbox scelta salvataggi di un utente */
+.vbox-choice-saves {
+    -fx-background-color: #f7f7e7;
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+    -fx-alignment: center;
+    -fx-padding: 20px;
+    -fx-border-color: transparent; /* Rimuovi il bordo per evitare il colore bianco */
+}
+
+.hbox-districtChoice {
+    -fx-background-color: #f7f7e7;
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+    -fx-alignment: center;
+    -fx-padding: 20px;
+    -fx-border-color: transparent; /* Rimuovi il bordo per evitare il colore bianco */
+}
+
+.scroll-pane-districtChoice {
+    -fx-background-color: #f7f7e7;
+    -fx-padding: 20px; /* Padding interno */
+    -fx-background-radius: 15px; /* Raggio del bordo (opzionale) */
+    -fx-background-insets: 0, 1; /* Impostazione degli insets del background */
+}
+
+
+
+
+#mainMenuContainer {
+    -fx-background-image: url("../images/MainMenu.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+
+#mainTitle {
+    -fx-font-size: 900%;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+     -fx-effect: dropshadow(gaussian, black, 10, 0.7, 1, 1);
+    -fx-alignment: center;
+    -fx-font-family: "Alkhemikal";
+}
+
+#label {
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 10%;
+    -fx-border-color: black; /* Colore del bordo */
+    -fx-border-width: 2; /* Spessore del bordo */
+    -fx-padding: 13%; /* Spaziatura interna */
+    -fx-border-radius: 5; /* Raggio degli angoli del bordo */
+    -fx-text-fill: black; /* Colore del testo */
+}
+
+.button {
+    -fx-font-family: "ByteBounce";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+    -fx-font-size: 500%;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.7, 1, 1);
+    -fx-padding: 0px
+}
+
+.button:hover {
+     -fx-text-fill: #cdcdcd;
+}
+
+.button:disabled {
+     -fx-opacity: 0.6;
+}
+
+.IntroductionContainer1 {
+     -fx-background-image: url("../images/introduction1Pixel.jpg");
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.IntroductionContainer2 {
+     -fx-background-image: url("../images/introduction2Pixel.jpg");
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.IntroductionContainer3 {
+     -fx-background-image: url("../images/introduction3Pixel.jpg");
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+#glassLabel {
+    -fx-font-family: "ByteBounce";
+    -fx-padding: 50px;
+    -fx-font-size: 310%;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+
+}
+
+#saveButton, #mainMenuButton {
+    -fx-font-family: "ByteBounce";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+    -fx-font-size: 300%;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.5, 1, 1);
+    -fx-padding: 0px;
+}
+
+#EndDemoContainer{
+    -fx-background-image: url("../images/EndDemo.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+#labelPipa {
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 240%;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.5, 1, 1);
+}
+
+.main-stack-pane{
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.top-hbox {
+    -fx-spacing: 15px;
+}
+
+.top-hbox-buttons {
+    -fx-background-color: black;
+    -fx-border-color: #7c3112;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 32px;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+}
+
+.top-hbox-buttons:hover {
+    -fx-text-fill: #ff9933; /* Colore del testo più chiaro */
+    -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+}
+
+
+.center-stack-pane {
+    -fx-background-image: url("../images/paperBackground.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+}
+
+
+
+.left-stack-pane {
+    -fx-background-color: #f7f7e7;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+    -fx-padding: 10px;
+    -fx-pref-width: 400px;
+ }
+
+
+.title-label {
+    -fx-font-family: "Alkhemikal";
+    -fx-text-fill: black;
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.description-container {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius:6px;
+    -fx-padding: 10px;
+}
+
+.scroll-pane-puzzle {
+    -fx-background-color: #f7f7e7;
+    -fx-padding: 20px; /* Padding interno */
+    -fx-border-width: 3px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px; /* Raggio del bordo (opzionale) */
+    -fx-background-radius: 15px; /* Raggio del bordo (opzionale) */
+    -fx-background-insets: 0, 1; /* Impostazione degli insets del background */
+}
+/* Personalizzare la parte della scrollbar che si sposta (thumb) */
+.scroll-pane-puzzle .scroll-bar {
+    -fx-background-color: transparent; /* Rendi trasparente la parte statica della scrollbar */
+    -fx-background-radius: 5px; /* Raggio per arrotondare gli angoli */
+    -fx-pref-width: 9px; /* Larghezza del thumb per la scrollbar verticale */
+}
+
+/* Personalizzare il thumb della scrollbar (la parte che si sposta) */
+.scroll-pane-puzzle .scroll-bar .thumb {
+    -fx-background-color: #7c3112; /* Colore del thumb */
+    -fx-background-radius: 5px; /* Arrotondamento del thumb */
+}
+
+/* Personalizzare l'area di traccia della scrollbar */
+.scroll-pane-puzzle .scroll-bar .track {
+    -fx-background-color: black; /* Colore di sfondo della traccia */
+    -fx-background-radius: 5px; /* Arrotondamento della traccia */
+}
+
+.scroll-pane-puzzle .viewport {
+    -fx-background-color: transparent; /* Rendi trasparente il viewport interno */
+}
+
+.description-text {
+    -fx-font-family: "ByteBounce";
+    -fx-fill: black;
+    -fx-font-size: 26px;
+}
+
+
+.description-list-view {
+    -fx-font-family: "ByteBounce";
+    -fx-fill: black;
+    -fx-font-size: 26px;
+    -fx-background-color: #f7f7e7;
+}
+
+/* Stile per la ListView */
+.description-list-view .list-cell {
+    -fx-background-color: #f7f7e7;
+    -fx-alignment: center;
+}
+
+/* Altri stili per la ListView, se necessario */
+.description-list-view .list-cell:hover {
+     -fx-text-fill: #e70e0e;  /* Colore blu per il testo selezionato */
+}
+
+.description-list-view .list-cell:selected {
+    -fx-text-fill:  #9c1616;  /* Colore blu per il testo selezionato */
+}
+
+
+.hbox-button-puzzle {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+
+/*
+-fx-background-color: black;
+    -fx-border-color: #7c3112;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 32px;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+*/
+
+.buttonPuzzle {
+    -fx-background-color: #7c3112;
+    -fx-border-color: black; /* Bordi scuri per eleganza */
+    -fx-border-width: 3px; /* Bordo sottile per un tocco vintage */
+    -fx-border-radius: 5px; /* Arrotondamento leggero per un look morbido */
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 32px;
+    -fx-padding: 10px 20px; /* Spaziatura generosa */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+}
+.buttonPuzzle:hover {
+   /* -fx-background-color: #863613; /* Cambia il gradiente per l'effetto hover */
+   /* -fx-border-color: #9e7e4f; /* Colore del bordo più chiaro */
+   /* -fx-border-width: 4px; /* Aumenta il bordo per evidenziare */
+    -fx-text-fill: #ff9933; /* Colore del testo più chiaro */
+    -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+   /* -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 12, 0.5, 2, 2); /* Ombra più marcata */
+}
+
+
+
+
+
+
+
+ /* Test di primo puzzle */
+.vbox-p3-polaroid{
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 40px;
+    -fx-padding: 10px;
+}
+
+.hbox-p3{
+    -fx-spacing: 60px;
+    -fx-padding: 20px;
+}
+
+
+.img-p3 {
+    -fx-preserve-ratio: true;
+    -fx-fit-width: 150px;  /* Larghezza desiderata */
+    -fx-cursor:hand;
+}
+
+.img-p3: hover {
+    -fx-effect: dropshadow(gaussian, black, 5, 20, 0, 0);
+    -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+}
+
+.img-p3: disabled {
+   -fx-opacity: 0.7;
+}
+
+.vbox-p3-center {
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 30px;
+    -fx-padding: 10px 0px 0px 200px;
+}
+
+.shoe-print {
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-preserve-ratio: true;
+    -fx-fit-width: 320px;  /* Larghezza desiderata */
+}
+
+.label-impronta {
+    -fx-font-family: "ByteBounce";
+    -fx-fill: black;
+    -fx-font-size: 32px;
+    -fx-border-width: 3px;
+}
+
+.center-hbox{
+    -fx-alignment: center;
+}
+
+
+.stack-hint{
+  -fx-alignment: center;
+  -fx-background-color: rgba(0,0,0,0.6);
+}
+
+.vbox-hint{
+    -fx-background-color: #f7f7e7;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+    -fx-alignment: center;
+    -fx-padding: 20px;
+}
+
+
+
+
+ /* MAIN MENU */
+ .mainMenu-stack-pane {
+
+
+
+
+
+
+
+
+/*Pause menu*/
+
+ .pauseMenu-stack-pane {
+    -fx-alignment: center;
+    -fx-background-color: rgba(0,0,0,0.6);
+ }
+
+
+
+.tab-header-area .tab-header-background {
+ 	-fx-background-color: transparent;
+
+}
+
+
+.tab-pane {
+    -fx-background-image: url("../images/backgroundPauseMenu.jpeg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-padding:58px;
+
+
+}
+
+.tab {
+    -fx-background-color: transparent;
+    /*-fx-background-color: #EFEBCE;*/
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 26px;
+    -fx-cursor: hand;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-padding:12px;
+
+
+}
+
+.tab .tab-label {
+ 	-fx-alignment: CENTER;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+
+}
+
+
+
+
+.tab:focused, .tab-pane:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+
+}
+
+
+
+
+
+.tab:selected{
+    -fx-background-color: #f7f7e7;
+    -fx-border-color: #f7f7e7;
+    -fx-border-width: 5px 5px 5px 5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius:10px;
+
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: black; /* Cambia il colore del testo a nero */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* MAIN MENU */
+ .mainMenu-stack-pane {
+    -fx-alignment: center;
+    -fx-background-color: rgba(0,0,0,0.6);
+ }
+
+
+.titlePauseMenu {
+     -fx-font-family: "Alkhemikal";
+     -fx-font-size: 800%;
+}
+
+
+
+ /*         PUZZLE: ORARIO DELLA CONFUSIONE         */
+
+ .label-string-center {
+      -fx-font-family: "ByteBounce";
+      -fx-font-size: 27px;
+      -fx-padding: 20px; /* Spaziatura generosa */
+
+
+}
+
+.center-padding-hbox{
+    -fx-alignment: center;
+    -fx-padding: 0px;
+    -fx-spacing: 5px;
+}
+
+.padding-hbox{
+    -fx-alignment: center-left;
+     -fx-padding: 10px;
+     -fx-max-width:1090px;
+ }
+
+
+.button-guard-puzzle {
+    -fx-background-color: #7c3112;
+    -fx-border-color: black; /* Bordi scuri per eleganza */
+    -fx-border-width: 4px; /* Bordo sottile per un tocco vintage */
+    -fx-border-radius: 5px; /* Arrotondamento leggero per un look morbido */
+    -fx-background-radius: 14px; /* Arrotonda il colore di sfondo */
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 32px;
+    -fx-padding: 20px; /* Spaziatura generosa */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+    -fx-pref-width:90;
+}
+
+.button-guard-puzzle:disabled{
+    -fx-opacity: 1;
+}
+
+
+
+
+
+
+
+ /*         PUZZLE: LA FIRMA CODIFICATA          */
+ .title-label-Puzzle {
+     -fx-font-family: "ByteBounce";
+     -fx-text-fill: black;
+     -fx-font-size: 50px;
+     -fx-font-weight: bold;
+     -fx-alignment: center;
+ }
+
+.hbox-words {
+    -fx-spacing: 40px;
+    -fx-alignment: center;
+}
+
+.words {
+    -fx-font-family: "Alkhemikal";
+    -fx-text-fill: black;
+    -fx-font-size: 64px;
+    -fx-font-weight: bold;
+}
+
+
+ .hbox-key-buttons {
+    -fx-padding: 30px;
+    -fx-spacing: 50px;
+    -fx-alignment: center;
+ }
+
+
+.hbox-key-buttons-2 {
+     -fx-spacing: 10px;
+     -fx-alignment: center;
+}
+/* Dialog */
+
+.blur-overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent overlay */
+    -fx-pref-height: 100%;
+    -fx-pref-width: 100%;
+}
+
+.dialog-anchor-pane1 {
+    -fx-padding: 10;
+}
+
+.dialog-button{
+        -fx-font-family: "ByteBounce";
+      -fx-background-color: transparent;
+        -fx-padding: 5;
+        -fx-cursor: hand;
+        -fx-font-size: 30px;
+}
+
+.dialog-bottom-stack-pane{
+    -fx-padding: 10;
+}
+
+.dialog-label{
+    -fx-font-family: "ByteBounce";
+    -fx-background-color: #8B8474;
+    -fx-text-fill: white;
+    -fx-padding: 5;
+    -fx-font-size: 40px;
+    -fx-border-color: black; /* Bordi neri */
+    -fx-border-width: 5px;
+    -fx-background-radius: 5px; /* Rounded corners for the background */
+}
+
+.dialog-conversation{
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 35px;
+
+}
+
+.dialog-stack-pane-2{
+    -fx-background-color: #f7f7e7;
+    -fx-padding: 10;
+    -fx-border-color: black; /* Bordi neri */
+    -fx-border-width: 5px;
+    -fx-background-radius: 5px; /* Rounded corners for the background */
+}
+
+
+/* NewGame */
+
+.name-textfield{
+    -fx-font-family: "ByteBounce";
+    -fx-background-color: #f7f7e7;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 26px;
+}
+
+.name-textfiled .context-menu {
+    -fx-opacity: 0; /* Nascondi il menu contestuale */
+}
+
+
+/* saveFile */
+
+.save-file-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-max-width: 210px;
+    -fx-max-height: 180px;
+}
+
+.save-file-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: white;
+}
+
+.save-file-button-content {
+    -fx-alignment: center;
+}
+
+.save-file-text {
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+.save-file-image {
+    -fx-fit-width: 200px;
+    -fx-fit-height: 150px;
+    -fx-preserve-ratio: true;
+}
+
+
+.buttonSignPuzzle {
+    -fx-background-color: #7c3112;
+    -fx-border-color: black; /* Bordi scuri per eleganza */
+    -fx-border-width: 4px; /* Bordo sottile per un tocco vintage */
+    -fx-border-radius: 5px; /* Arrotondamento leggero per un look morbido */
+    -fx-background-radius: 14px; /* Arrotonda il colore di sfondo */
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 32px;
+    -fx-padding: 20px; /* Spaziatura generosa */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+}
+
+
+.buttonSignPuzzle:hover {
+   /* -fx-background-color: #863613; /* Cambia il gradiente per l'effetto hover */
+   /* -fx-border-color: #9e7e4f; /* Colore del bordo più chiaro */
+   /* -fx-border-width: 4px; /* Aumenta il bordo per evidenziare */
+    -fx-text-fill: #ff9933; /* Colore del testo più chiaro */
+    -fx-scale-x: 1.02;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.02; /* Ingrandisce leggermente il bottone */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 12, 0.5, 2, 2); /* Ombra più marcata */
+}
+
+/* sobborghi 1*/
+.label-ds{
+    -fx-border-color: black;
+    -fx-background-color: #f7f7e7;
+    -fx-border-width:4px;
+    -fx-padding:30px;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 50px;
+}
+
+.vbox-ds{
+    -fx-alignment:center;
+    -fx-spacing:25px;
+}
+
+.inner-vbox-ds{
+     -fx-alignment:center;
+}
+
+.number-textField{
+       -fx-font-family: "ByteBounce";
+        -fx-background-color: #f7f7e7;
+        -fx-border-color: black;
+        -fx-border-width: 5px;
+        -fx-border-radius: 5px;
+        -fx-background-radius: 10px;
+        -fx-font-size: 35px;
+        -fx-max-width: 90px;
+        -fx-alignment: center;
+}
+
+.number-textField .context-menu {
+    -fx-opacity: 0; /* Nascondi il menu contestuale */
+}
+
+
+
+.hboc-ds-top{
+    -fx-alignment: center;
+    -fx-max-width: none;
+    -fx-border-width:4px 4px 0px 4px;
+    -fx-border-color:black;
+}
+
+.hboc-ds-center{
+    -fx-alignment: center;
+    -fx-max-width: none;
+    -fx-border-width:4px;
+    -fx-border-color:black;
+}
+
+.hboc-ds-bottom{
+    -fx-alignment: center;
+    -fx-max-width: none;
+    -fx-border-width:0px 4px 4px 4px;
+    -fx-border-color:black;
+}
+
+
+
+ /*         ZONE-PREVIEW          */
+
+/*
+ .stack-pane-zonePreview {
+    -fx-background-image: url("../images/historicCenter1.jpg");
+    -fx-background-color: rgba(0,0,0,0.9);
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    */
+ }
+
+.zone-name {
+    /*
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-border-color: black;
+    */
+    -fx-font-family: "Alkhemikal";
+    -fx-text-fill: white;
+    -fx-font-size: 80px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.9), 15, 0.8, 1, 1); /* Ombra per profondità */
+
+}
+
+.enter-zone-button {
+    -fx-background-color: black;
+    -fx-border-color: #7c3112;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+     -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 50px;
+    -fx-padding: 10px 50px 10px 50px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+}
+
+
+.enter-zone-button:hover {
+   /* -fx-background-color: #863613; /* Cambia il gradiente per l'effetto hover */
+   /* -fx-border-color: #9e7e4f; /* Colore del bordo più chiaro */
+   /* -fx-border-width: 4px; /* Aumenta il bordo per evidenziare */
+    -fx-text-fill: #ff9933; /* Colore del testo più chiaro */
+    -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+   /* -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 12, 0.5, 2, 2); /* Ombra più marcata */
+}
+
+.buttonArrow {
+    /* -fx-background-color: black; /* Colore di sfondo */
+
+    -fx-border-width: 5px; /* Larghezza del bordo */
+    -fx-border-radius: 15px; /* Arrotondamento uniforme */
+    /* -fx-background-radius: 14px; /* Allinea il raggio del colore di sfondo con il bordo */
+    -fx-effect: none; /* Disabilita gli effetti */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+}
+
+
+.buttonArrow:hover {
+   /* -fx-background-color: #863613; /* Cambia il gradiente per l'effetto hover */
+   /* -fx-border-color: #9e7e4f; /* Colore del bordo più chiaro */
+   /* -fx-border-width: 4px; /* Aumenta il bordo per evidenziare */
+    -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+   /* -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 12, 0.5, 2, 2); /* Ombra più marcata */
+}
+
+
+
+
+
+
+
+
+ /*         PUZZLE: Traduci la lettera del quartiere storico         */
+
+.clock-image {
+    -fx-preserve-ratio: true;
+    -fx-fit-width: 400px;
+}
+
+.border-pane-clock{
+
+}
+
+.cgc {
+    -fx-padding: 15px;
+}
+
+.xxx {
+    -fx-padding: 5px;
+}
+
+.label-impronta-clock {
+    -fx-font-family: "ByteBounce";
+    -fx-fill: black;
+    -fx-font-size: 31px;
+    -fx-alignment: center; /* Centra il testo */
+}
+
+.clock-stackpane {
+    -fx-padding: 7px;
+}
+
+.hbox-numbers-clock {
+    -fx-padding: 5px;
+    -fx-max-width:1200px;
+}
+
+.stackPane-hbox-of-numbers-clock {
+    /*
+    -fx-border-width: 4px;
+    -fx-border-color: black;
+    -fx-border-radius: 7px;
+
+    */
+    -fx-padding: 10px;
+    /*
+    -fx-background-color: #d5cec4;
+    */
+}
+
+
+.text-area-puzzle {
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 32px;
+    -fx-padding: 20px; /* Spaziatura generosa */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-border-color: black; /* Bordi scuri per eleganza */
+    -fx-border-width: 4px; /* Bordo sottile per un tocco vintage */
+    -fx-border-radius: 5px; /* Arrotondamento leggero per un look morbido */
+    -fx-background-radius: 14px; /* Arrotonda il colore di sfondo */
+}
+
+/* Personalizza la ScrollPane interna della TextArea */
+.text-area-puzzle .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area-puzzle .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.text-area-puzzle .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+/* Personalizzare la ScrollBar verticale */
+.text-area-puzzle .scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent; /* Rendi trasparente la parte fissa della scrollbar */
+    -fx-background-radius: 5px; /* Raggio per arrotondare gli angoli */
+    -fx-pref-width: 10px; /* Larghezza della scrollbar */
+}
+
+/* Personalizzare il thumb della scrollbar (la parte mobile) */
+.text-area-puzzle .scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #7c3112; /* Colore del thumb (la parte mobile) */
+    -fx-background-radius: 5px; /* Arrotondamento del thumb */
+}
+
+/* Personalizzare la traccia della scrollbar (parte fissa su cui si sposta il thumb) */
+.text-area-puzzle .scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #f7f7f7; /* Colore di sfondo della traccia */
+    -fx-background-radius: 5px; /* Arrotondamento della traccia */
+}
+
+/* Nascondere la ScrollBar orizzontale */
+.text-area-puzzle .scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0; /* Rendi invisibile */
+    -fx-pref-height: 0; /* Imposta altezza a 0 */
+    -fx-max-height: 0; /* Imposta altezza massima a 0 */
+}
+
+/* Evita qualsiasi stile per il thumb e la traccia della scrollbar orizzontale */
+.text-area-puzzle .scroll-pane .scroll-bar:horizontal .thumb,
+.text-area-puzzle .scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: transparent;
+}
+
+.text-area-puzzle .context-menu {
+    -fx-opacity: 0; /* Nascondi il menu contestuale */
+}
+
+
+
+
+
+ /*         PUZZLE: Il codice del lucchetto        */
+.padlock-image {
+    -fx-preserve-ratio: true;
+    -fx-fit-width: 350px;
+}
+
+.input-textfield-padlock{
+    -fx-max-width: 100;
+    -fx-padding: 10;
+    -fx-font-family: "ByteBounce";
+    -fx-background-color: #f7f7e7;
+    -fx-background-radius: 10px;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+}
+
+.input-textfield-padlock .context-menu {
+    -fx-opacity: 0; /* Nascondi il menu contestuale */
+}
+
+
+.vbox-padlock {
+    -fx-alignment: center;
+    /*-fx-background-color: rgba(255, 255, 255, 0.2); */
+    /*-fx-border-color: black;*/
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.vbox-padlock-2 {
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 5px;
+    -fx-background-size: auto;  /* L'immagine si adatta senza essere tagliata */
+    -fx-background-repeat: no-repeat;  /* Non ripetere l'immagine */
+
+}
+
+
+.label-padlock {
+    -fx-font-family: "Alkhemikal";
+    -fx-text-fill: black;
+    -fx-font-size: 30px;
+    -fx-alignment: center;
+}
+
+
+ /* Soluzione*/
+ .solutionLabel{
+    -fx-font-size: 700%;
+     -fx-font-weight: bold;
+     -fx-text-fill: white;
+     -fx-effect: dropshadow(gaussian, black, 10, 0.5, 0, 0);
+     -fx-alignment: center;
+     -fx-font-family: "ByteBounce";
+ }
+
+
+ /* Grid */
+
+ .stackpane-image-grid{
+    -fx-border-color: #7B3F2D;
+    -fx-border-width:10px;
+    -fx-background-color: #f7f7e7;
+    -fx-alignment: center;
+    -fx-pref-width: 107px;
+    -fx-max-width: 107px;
+    -fx-max-height: 107px;
+ }
+
+ .img-grid-button{
+     -fx-cursor:hand;
+     -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+     -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+ }
+
+ .img-grid-button: hover {
+    -fx-scale-x: 1.10;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.10; /* Ingrandisce leggermente il bottone */
+ }
+
+ .img-grid-button: disabled {
+    -fx-opacity: 1;
+ }
+
+ .hvbox-grid{
+    -fx-alignment:center;
+ }
+
+
+/*PUZZLE: GATTI QUARTIERE ACCADEMIE*/
+.vbox-cats {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-padding: 15px;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 14px;
+    -fx-min-width: 700px; /* Limita la dimensione della VBox */
+    -fx-min-height: 500px; /* Limita la dimensione della VBox */
+}
+
+.pane-cats {
+    -fx-alignment: center;
+    -fx-background-color: rgba(1, 1, 1, 0.2);
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-min-width: 300px; /* Limita la dimensione della VBox */
+    -fx-min-height: 300px; /* Limita la dimensione della VBox */
+    -fx-max-width: 300px; /* Limita la dimensione della VBox */
+    -fx-max-height: 300px; /* Limita la dimensione della VBox */
+}
+
+.cats-image {
+    -fx-preserve-ratio: true;
+    -fx-fit-width: 270px; /* Adatta alla larghezza del contenitore */
+    -fx-alignment: center;
+}
+
+
+.vbox-padding-cats{
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+    -fx-max-width: 600px;
+}
+
+
+
+
+
+/*PUZZLE: Anello con sigillo*/
+
+.hbox-simboli-anello{
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 30px;
+    -fx-padding: 10px;
+
+}
+
+
+.label-impronta-small {
+    -fx-font-family: "ByteBounce";
+    -fx-fill: black;
+    -fx-font-size: 19px;
+    -fx-border-width: 3px;
+    -fx-alignment: center;
+    -fx-font-size:28px;
+}
+
+.vbox-simboli-anello{
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+
+ .title-simboli-anello{
+     -fx-font-family: "Alkhemikal";
+     -fx-text-fill: black;
+     -fx-font-size: 66px;
+     -fx-font-weight: bold;
+     -fx-alignment: center;
+ }
+
+
+.vbox-main-simboli-anello{
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 0px;
+    -fx-padding: 0px;
+}
+
+.img-simboli-anello{
+    -fx-fit-width: 80px;
+    -fx-fit-height: 80px;
+    -fx-preserve-ratio: true;
+    -fx-cursor:hand;
+}
+
+
+.img-simboli-anello: hover {
+    -fx-effect: dropshadow(gaussian, white, 5, 20, 0, 0);
+    -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+}
+
+.img-simboli-anello: disabled {
+   -fx-opacity: 0.4;
+}
+
+
+
+
+/*PUZZLE: Mappe quartiere accademie*/
+
+.vbox-main-mappe{
+    -fx-alignment: center;  /* Allineamento al centro */
+    -fx-spacing: 0px;
+    -fx-padding: 0px;
+}
+
+.img-mappe {
+    -fx-fit-width: 500px;
+    -fx-fit-height: 500px;
+    -fx-preserve-ratio: true;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
+    -fx-opacity: 1.0;
+}
+
+
+.img-mappe:hover {
+    -fx-scale-x: 1.0; /* Ingrandisce l'immagine */
+    -fx-scale-y: 1.0;
+    -fx-effect: dropshadow(gaussian, black, 20, 0.5, 0, 0); /* Ombra per simulare la profondità */
+    -fx-opacity: 1.0; /* Assicura che l'immagine rimanga visibile */
+}
+
+.img-mappe: disabled {
+   -fx-opacity: 0.4;
+}
+
+
+.vbox-img-mappe{
+    -fx-alignment: center;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+.leftArrow {
+    -fx-fit-width: 100px;  /* Imposta la larghezza dell'immagine */
+    -fx-fit-height: 100px; /* Imposta l'altezza dell'immagine */
+}
+
+.righArrow {
+    -fx-fit-width: 100px;  /* Imposta la larghezza dell'immagine */
+    -fx-fit-height: 100px; /* Imposta l'altezza dell'immagine */
+}
+
+
+.confirm-item-button {
+    -fx-background-color: black;
+            -fx-border-color: #7c3112;
+            -fx-border-width: 5px;
+            -fx-border-radius: 5px;
+            -fx-background-radius: 9px;
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 50px;
+    -fx-padding: 10px 50px 10px 50px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+}
+.confirm-item-button:hover {
+     -fx-background-color: #5da163; /* Cambia il gradiente per l'effetto hover */
+    -fx-border-color: white;
+    -fx-text-fill: white; /* Colore del testo più chiaro */
+     -fx-scale-x: 1.05;
+     -fx-scale-y: 1.05;
+}
+
+.pizza {
+    -fx-background-color: black;
+}
+
+.vbox-key-buttons{
+    -fx-alignment:center;
+}
+
+
+/*Puzzle: Quartiere mercato Inseguimenti parte1*/
+
+
+.stack-pane-inseguimento {
+    -fx-alignment: center;
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 14px;
+    -fx-max-height:500px;
+}
+
+.vbox-button-inseguimento{
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-padding: 15px;
+}
+
+
+.img-inseguimento{
+    -fx-fit-width: 700px;
+    -fx-fit-height: auto;
+    -fx-preserve-ratio: true;
+}
+
+
+.button-inseguimento {
+    -fx-background-color: #7c3112;
+    -fx-border-color: black; /* Bordi scuri per eleganza */
+    -fx-border-width: 4px; /* Bordo sottile per un tocco vintage */
+    -fx-border-radius: 5px; /* Arrotondamento leggero per un look morbido */
+    -fx-background-radius: 14px; /* Arrotonda il colore di sfondo */
+    -fx-text-fill: white;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 32px;
+    -fx-padding: 20px; /* Spaziatura generosa */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+    -fx-pref-width:90;
+}
+
+.button-inseguimento:disabled{
+    -fx-opacity: 0.2;
+}
+
+
+
+/*PUZZLE: Quartiere mercato mercanti*/
+.vbox-mercanti {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+    -fx-padding: 5px;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 14px;
+}
+
+.stack-pane-mercanti {
+    -fx-alignment: center;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-max-width:300px;
+}
+
+.mercanti-image {
+    -fx-preserve-ratio: true;
+    -fx-alignment: center;
+    -fx-fit-width: 250px;
+}
+
+
+.vbox-text-field-mercanti{
+    -fx-alignment:center;
+    -fx-spacing: 5px;
+    -fx-padding: 5px;
+}
+
+
+.input-textfield-mercanti{
+    -fx-max-width: 100;
+    -fx-padding: 5;
+    -fx-font-family: "ByteBounce";
+    -fx-background-color: #f7f7e7;
+    -fx-background-radius: 10px;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+}
+
+.main-stack-pane-mercanti{
+    -fx-alignment:center;
+    -fx-max-width:600px;
+    -fx-max-height:400px;
+}
+
+.words-noble{
+    visibility:false;
+}
+
+.buttonSignPuzzle-noble{
+    -fx-background-color: #7c3112;
+        -fx-border-color: black; /* Bordi scuri per eleganza */
+        -fx-border-width: 4px; /* Bordo sottile per un tocco vintage */
+        -fx-border-radius: 5px; /* Arrotondamento leggero per un look morbido */
+        -fx-background-radius: 14px; /* Arrotonda il colore di sfondo */
+        -fx-text-fill: white;
+        -fx-font-family: "ByteBounce";
+        -fx-font-size: 32px;
+        -fx-padding: 20px; /* Spaziatura generosa */
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+        -fx-cursor: hand; /* Effetto mano per cliccare */
+}
+
+.buttonSignPuzzle-noble:hover {
+   /* -fx-background-color: #863613; /* Cambia il gradiente per l'effetto hover */
+   /* -fx-border-color: #9e7e4f; /* Colore del bordo più chiaro */
+   /* -fx-border-width: 4px; /* Aumenta il bordo per evidenziare */
+    -fx-text-fill: #ff9933; /* Colore del testo più chiaro */
+    -fx-scale-x: 1.02;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.02; /* Ingrandisce leggermente il bottone */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 12, 0.5, 2, 2); /* Ombra più marcata */
+}
+
+.description-text-menu {
+    -fx-font-family: "ByteBounce";
+    -fx-text-fill: #F7F7E7;
+    -fx-font-size: 40px;
+}
+
+.button-menu{
+-fx-font-size: 40px;
+}
+
+.hbox-n3{
+    -fx-alignment: center;
+    -fx-alignment: center;
+}
+
+.button-n3{
+    -fx-fit-width: 80px;
+    -fx-fit-height: 80px;
+    -fx-preserve-ratio: true;
+    -fx-cursor: hand;
+}
+
+
+
+.button-n3: hover {
+-fx-opacity: 0.9;
+    -fx-scale-x: 1.05;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.05; /* Ingrandisce leggermente il bottone */
+}
+
+.button-n3: disabled {
+   -fx-opacity: 0.4;
+}
+
+.settings-vbox{
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 8px; /* Arrotonda il colore di sfondo */
+    -fx-background-color: #f7f7e7;
+}
+
+.button-settings{
+        -fx-text-fill: black;
+        -fx-font-size: 26px;
+        -fx-cursor: hand;
+        -fx-effect: dropshadow(gaussian, black, 0, 0, 0, 0);
+        -fx-padding: 0px
+}
+
+.button-settings: hover{
+        -fx-text-fill: #2d2d2d;
+        -fx-effect: dropshadow(gaussian, white, 0, 0, 0, 0);
+}
+
+
+/*Puzzle: quartiere accademie Calligrafie*/
+
+.img-lettere{
+    -fx-fit-width: 345px;
+    -fx-preserve-ratio: true;
+    -fx-cursor:hand;
+}
+
+.hbox-calligrafie{
+    -fx-spacing:50px;
+    -fx-alignment:center;
+}
+
+
+.vbox-calligrafie{
+    -fx-spacing:18px;
+    -fx-alignment:center;
+    -fx-padding:5px;
+}
+
+
+
+.button-calligrafie{
+    -fx-background-color: #7c3112;
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 14px;
+    -fx-text-fill: yellow;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2);
+    -fx-cursor: hand;
+    -fx-min-width:70px;
+    -fx-min-height:70px;
+}
+
+.button-calligrafie:disabled{
+    -fx-opacity: 0.4;
+}
+
+.button-calligrafie:hover {
+     -fx-text-fill: #cdcdcd;
+}
+
+
+
+.hbox-right{
+    -fx-spacing:12px;
+
+}
+
+
+.hbox-right{
+    -fx-spacing:12px;
+
+}
+
+
+
+
+
+.vbox-calligrafie-right{
+    -fx-spacing:18px;
+        -fx-alignment:center;
+        -fx-padding:5px;
+
+}
+
+
+/*Puzzle: quartiere popolare Pianoforte*/
+
+
+.img-piano-DO, .img-piano-RE, .img-piano-MI, .img-piano-FA, .img-piano-SOL, .img-piano-LA, .img-piano-SI, .img-piano-DO2{
+    -fx-fit-width: 80px;
+    -fx-preserve-ratio: true;
+    -fx-cursor:hand;
+}
+
+.img-piano-DO:hover, .img-piano-RE:hover, .img-piano-MI:hover, .img-piano-FA:hover, .img-piano-SOL:hover, .img-piano-LA:hover, .img-piano-SI:hover, .img-piano-DO2:hover{
+    -fx-opacity:0.9;
+}
+
+.img-piano-DO:pressed, .img-piano-RE:pressed, .img-piano-MI:pressed, .img-piano-FA:pressed, .img-piano-SOL:pressed, .img-piano-LA:pressed, .img-piano-SI:pressed, .img-piano-DO2:pressed{
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+}
+
+
+.img-carillon{
+    -fx-fit-width: 130px;
+    -fx-preserve-ratio: true;
+    -fx-cursor:hand;
+}
+
+
+
+.img-carillon:hover {
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.5, 0, 0);
+}
+
+
+.hbox-piano{
+    -fx-alignment:center;
+    -fx-spacing:0px;
+    -fx-alignment: center;
+    -fx-background-color: rgba(1, 1, 1, 0.5);
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 0px 0px 4px 4px;
+    -fx-background-radius: 14px;
+    -fx-max-width: 250px;
+    -fx-max-height: 350px;
+}
+
+.vbox-piano{
+    -fx-alignment:center;
+}
+
+
+
+
+
+.stackpane-carillon{
+    -fx-padding:10px;
+    -fx-alignment: center;
+    -fx-max-width: 180px;
+    -fx-max-height: 180px;
+ }
+
+
+.label-piano {
+    -fx-font-family: "Alkhemikal";
+    -fx-font-size: 32px;
+    -fx-text-fill: #f7f7e7;
+}
+
+.hbox-label-piano{
+    -fx-alignment:center;
+    -fx-spacing:45px;
+    -fx-padding:5px;
+    -fx-alignment:center;
+    -fx-background-color: rgba(1, 1, 1, 0.3);
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 4px 4px 0px 0px;
+    -fx-background-radius: 14px;
+    -fx-max-width:648px;
+
+}
+
+
+
+.img-nota-nera1{
+    -fx-fit-width: 37px;
+    -fx-fit-height: 303px;
+    -fx-preserve-ratio: true;
+    -fx-translate-x:-240px;
+    -fx-translate-y:-75px;
+    -fx-cursor:hand;
+}
+
+.img-nota-nera1:hover, .img-nota-nera2:hover, .img-nota-nera3:hover, .img-nota-nera4:hover, .img-nota-nera5:hover, .img-nota-nera6:hover{
+     -fx-effect: dropshadow(gaussian, black, 15, 0.5, 0, 3);
+}
+
+.img-nota-nera1:pressed, .img-nota-nera2:pressed, .img-nota-nera3:pressed, .img-nota-nera4:pressed, .img-nota-nera5:pressed, .img-nota-nera6:pressed{
+     -fx-scale-x: 0.96;
+     -fx-scale-y: 0.96;
+}
+
+.img-nota-nera2{
+    -fx-fit-width: 37px;
+    -fx-fit-height: 303px;
+    -fx-preserve-ratio: true;
+    -fx-translate-x:-160px;
+    -fx-translate-y:-75px;
+    -fx-cursor:hand;
+}
+
+
+
+.img-nota-nera3{
+    -fx-fit-width: 37px;
+    -fx-fit-height: 303px;
+    -fx-preserve-ratio: true;
+    -fx-translate-x:-79px;
+    -fx-translate-y:-75px;
+    -fx-cursor:hand;
+}
+
+
+
+
+
+.img-nota-nera4{
+    -fx-fit-width: 37px;
+    -fx-fit-height: 303px;
+    -fx-preserve-ratio: true;
+    -fx-translate-x:81px;
+    -fx-translate-y:-75px;
+    -fx-cursor:hand;
+}
+
+
+
+
+
+
+.img-nota-nera5{
+    -fx-fit-width: 37px;
+    -fx-fit-height: 303px;
+    -fx-preserve-ratio: true;
+    -fx-translate-x:160px;
+    -fx-translate-y:-75px;
+    -fx-cursor:hand;
+}
+
+
+
+
+.img-nota-nera6{
+    -fx-fit-width: 37px;
+    -fx-fit-height: 236px;
+    -fx-preserve-ratio: true;
+    -fx-translate-x:312px;
+    -fx-translate-y:-75px;
+    -fx-cursor:hand;
+}
+
+.img-barra-nera1{
+    -fx-fit-width: 300px;
+    -fx-preserve-ratio: true;
+    -fx-cursor:hand;
+    -fx-translate-x:-170px;
+    -fx-translate-y:-191px;
+}
+
+.img-barra-nera2{
+    -fx-fit-width: 300px;
+    -fx-preserve-ratio: true;
+    -fx-cursor:hand;
+    -fx-translate-x:128px;
+    -fx-translate-y:-191px;
+}
+
+.img-barra-nera3{
+    -fx-fit-width: 300px;
+    -fx-preserve-ratio: true;
+    -fx-cursor:hand;
+    -fx-translate-x:170px;
+    -fx-translate-y:-191px;
+}
+
+.hvbox-noble-3{
+    -fx-alignment: center;
+}
+
+.stackpane-noble-3{
+    -fx-alignment: center;
+}
+
+.img-noble-3:hover{
+    -fx-opacity:0.8;
+    -fx-cursor: hand;
+}
+
+.img-noble-3:disabled{
+    -fx-opacity:0.6;
+}
+
+.preLabel{
+    -fx-font-family: "ByteBounce";
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+}
+/*
+.diary-box {
+    -fx-padding: 30px;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 14px;
+}*/
+
+
+.diary-box {
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-padding: 20px; /* Padding interno */
+    -fx-border-width: 3px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px; /* Raggio del bordo (opzionale) */
+    -fx-background-radius: 15px; /* Raggio del bordo (opzionale) */
+    -fx-background-insets: 0, 1; /* Impostazione degli insets del background */
+}
+/* Personalizzare la parte della scrollbar che si sposta (thumb) */
+.diary-box .scroll-bar {
+    -fx-background-color: transparent; /* Rendi trasparente la parte statica della scrollbar */
+    -fx-background-radius: 5px; /* Raggio per arrotondare gli angoli */
+    -fx-pref-width: 9px; /* Larghezza del thumb per la scrollbar verticale */
+}
+
+/* Personalizzare il thumb della scrollbar (la parte che si sposta) */
+.diary-box .scroll-bar .thumb {
+    -fx-background-color: #F7F7E7; /* Colore del thumb */
+    -fx-background-radius: 5px; /* Arrotondamento del thumb */
+}
+
+/* Personalizzare l'area di traccia della scrollbar */
+.diary-box .scroll-bar .track {
+    -fx-background-color: black; /* Colore di sfondo della traccia */
+    -fx-background-radius: 5px; /* Arrotondamento della traccia */
+}
+
+.diary-box .viewport {
+    -fx-background-color: transparent; /* Rendi trasparente il viewport interno */
+}
+
+
+.item-name {
+    -fx-font-family: "Alkhemikal";
+    -fx-text-fill: black;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.stack-pane-item-details {
+    /*-fx-background-color: #f7f7e7; */
+    -fx-background-color: black;
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 10px;
+}
+
+.item-description {
+    -fx-font-family: "ByteBounce";
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.vbox-item-details {
+    -fx-padding: 10px;
+    -fx-spacing: 20px;
+}
+
+.button-item-details {
+    /*-fx-background-color: #7c3112;*/
+    -fx-border-width: 3px; /* Bordo sottile per un tocco vintage */
+    -fx-border-radius: 5px; /* Arrotondamento leggero per un look morbido */
+    -fx-background-radius: 9px; /* Arrotonda il colore di sfondo */
+    -fx-text-fill: #ff9933;
+    -fx-font-family: "ByteBounce";
+    -fx-font-size: 50px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 2, 2); /* Ombra per profondità */
+    -fx-cursor: hand; /* Effetto mano per cliccare */
+}
+.button-item-details:hover {
+   /* -fx-background-color: #863613; /* Cambia il gradiente per l'effetto hover */
+   /* -fx-border-color: #9e7e4f; /* Colore del bordo più chiaro */
+   /* -fx-border-width: 4px; /* Aumenta il bordo per evidenziare */
+    -fx-scale-x: 1.09;  /* Ingrandisce leggermente il bottone */
+    -fx-scale-y: 1.09; /* Ingrandisce leggermente il bottone */
+   /* -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 12, 0.5, 2, 2); /* Ombra più marcata */
+}
+
+
+
+.title-end-game {
+    -fx-font-family: "ByteBounce";
+    -fx-text-fill: red;
+    -fx-font-size: 100px;
+
+    -fx-alignment: center;
+}
+
+.stack-pane-game-over {
+    -fx-background-color: black;
+}
+
+.label-game-over {
+    -fx-font-family: "ByteBounce";
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-border-width: 3px;
+}
+
+.button-game-over {
+    -fx-font-family: "ByteBounce";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-width: 5;
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+    -fx-font-size: 300%;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.7, 1, 1);
+    -fx-padding: 10px
+    }
+
+.button-game-over:hover{
+    -fx-text-fill: #ff9933;
+        -fx-scale-x: 1.06;  /* Ingrandisce leggermente il bottone */
+        -fx-scale-y: 1.06; /* Ingrandisce leggermente il bottone */
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<StackPane fx:id="mainStackPane" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.ZoneController">
+    <children>
+      <StackPane fx:id="focusImagesContainer" StackPane.alignment="CENTER" />
+        <BorderPane>
+            <top>
+                <StackPane BorderPane.alignment="CENTER">
+                    <children>
+                        <!--
+                          <Label styleClass="zone-name" text="Scegli cosa fare" />
+                          -->
+                        <BorderPane>
+                     <right>
+                        <HBox spacing="15.0" BorderPane.alignment="CENTER">
+                           <children>
+                               <Button fx:id="pauseButton" mnemonicParsing="false" styleClass="top-hbox-buttons" text="Pausa" />
+                           </children>
+                        </HBox>
+                     </right>
+                        </BorderPane>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </BorderPane.margin>
+                </StackPane>
+            </top>
+            <bottom>
+                <Button fx:id="confirmButton" alignment="CENTER" mnemonicParsing="false" styleClass="confirm-item-button" text="Conferma" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="30.0" />
+                    </BorderPane.margin></Button>
+            </bottom>
+         <left>
+            <Button styleClass="buttonArrow" fx:id="backButton" mnemonicParsing="false" text="" BorderPane.alignment="CENTER">
+                <graphic>
+                    <!-- Carica l'immagine da un file -->
+                    <ImageView styleClass="leftArrow">
+                        <image>
+                            <Image url="@../images/leftArrow.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+               <BorderPane.margin>
+                  <Insets left="15.0" />
+               </BorderPane.margin></Button>
+         </left>
+         <right>
+            <Button styleClass="buttonArrow" fx:id="nextButton" mnemonicParsing="false" text="" BorderPane.alignment="CENTER">
+                <graphic>
+                    <!-- Carica l'immagine da un file -->
+                    <ImageView styleClass="righArrow">
+                        <image>
+                            <Image url="@../images/rightArrow.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+               <BorderPane.margin>
+                  <Insets right="15.0" />
+               </BorderPane.margin></Button>
+         </right>
+        </BorderPane>
+    </children>
+</StackPane>

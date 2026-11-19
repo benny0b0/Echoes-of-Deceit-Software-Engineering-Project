@@ -1,0 +1,348 @@
+{
+  "suburbsDistrict": {
+    "zones": {
+      "zone_1": {
+        "puzzle": [
+          {
+            "id": 3,
+            "title": "La prova dei bambini",
+            "description": "Decidi di chiedere a dei bambini delle informazioni, sperando che abbiano notato qualcosa di utile. Ma i piccoli, con sguardi furbi e sorrisi complici, ti mettono alla prova: non ti diranno nulla senza che prima tu risolva un compito per loro.  \n\nTi mostrano una griglia 3x3 incompleta. Otto caselle contengono numeri, mentre una e' vuota. Il tuo compito e' inserire il numero mancante.",
+            "solution": "1",
+            "hint": "Osserva attentamente la griglia: c'e' un equilibrio nascosto tra i numeri. Ogni fila, colonna e diagonale sembra seguire una regola precisa, come se dovessero bilanciarsi perfettamente.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children":[
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children":[
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "vbox-ds",
+                          "children":[
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "inner-vbox-ds",
+                              "children": [
+                                {
+                                  "type":"PuzzleComposite",
+                                  "element":"HBox",
+                                  "styleClass":"hboc-ds-top",
+                                  "children":[
+                                    {
+                                      "type":"PuzzleElement",
+                                      "element":"Label",
+                                      "styleClass":"label-ds",
+                                      "text":"2"
+                                    },
+                                    {
+                                      "type":"PuzzleElement",
+                                      "element":"Label",
+                                      "styleClass":"label-ds",
+                                      "text":"9"
+                                    },
+                                    {
+                                      "type":"PuzzleElement",
+                                      "element":"Label",
+                                      "styleClass":"label-ds",
+                                      "text":"4"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type":"PuzzleComposite",
+                                  "element":"HBox",
+                                  "styleClass":"hboc-ds-center",
+                                  "children":[
+                                    {
+                                      "type":"PuzzleElement",
+                                      "element":"Label",
+                                      "styleClass":"label-ds",
+                                      "text":"7"
+                                    },
+                                    {
+                                      "type":"PuzzleElement",
+                                      "element":"Label",
+                                      "styleClass":"label-ds",
+                                      "text":"5"
+                                    },
+                                    {
+                                      "type":"PuzzleElement",
+                                      "element":"Label",
+                                      "styleClass":"label-ds",
+                                      "text":"3"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type":"PuzzleComposite",
+                                  "element":"HBox",
+                                  "styleClass":"hboc-ds-bottom",
+                                  "children":[
+                                    {
+                                      "type":"PuzzleElement",
+                                      "styleClass":"label-ds",
+                                      "element":"Label",
+                                      "text":"6"
+                                    },
+                                    {
+                                      "type":"PuzzleElement",
+                                      "styleClass":"label-ds",
+                                      "element":"Label",
+                                      "text":"?"
+                                    },
+                                    {
+                                      "type":"PuzzleElement",
+                                      "styleClass":"label-ds",
+                                      "element":"Label",
+                                      "text":"8"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type":"PuzzleElement",
+                              "element":"Label",
+                              "styleClass":"description-text",
+                              "text":"Digita il numero mancante"
+                            },
+                            {
+                              "type":"PuzzleElement",
+                              "element":"TextField",
+                              "styleClass":"number-textField"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Strada",
+          "imageList": [
+            "suburbsDistrict11.jpg"
+          ],
+          "imagesMap": {
+            "suburbsDistrict11.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 0,
+              "diary": "\n\nSOBBORGHI\nI bambini erano stati enigmatici, come spesso sanno essere. Mi avevano detto: \"Dove i fiori non crescono e il vento sussurra, la' il mistero si chiude nella curva piu' scura.\"\nParole che sembravano uscite da un libro di fiabe, ma che celavano qualcosa. Se solo fossero stati piu' precisi, avrei avuto una direzione chiara. Invece, ora mi tocca girare per tutto il quartiere, cercando di capire dove quelle immagini poetiche trovino un riflesso nella realta'.\nNon e' il primo enigma che mi trovo a decifrare, ma questa volta il tempo e' contro di me. I giorni scorrono inesorabilmente, e io non posso permettermi di perdermi nei dettagli.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "bambini.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Buongiorni bambini, sto cercando una dimora abbandonata in questo quartiere, sapreste aiutarmi?"
+              },
+              {
+                "speaker": "Bambini",
+                "id": 2,
+                "text": "Tu sei davvero l'investigatore investigatore famoso che e' venuto nella nostra citta'?"
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Si sono io, avete visto qualcosa legato al furto del quadro?"
+              },
+              {
+                "speaker": "Bambini",
+                "id": 2,
+                "text": "Si abbiamo visto qualcosa di sospetto. Ma prima di dirtelo dimostra quanto sei bravo e risolvi questo compito che ci hanno lasciato le maestre a scuola!"
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "bambini.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Bene ragazzi ecco qui la soluzione: 1. In questo modo, tutte le righe, le diagonali e le colonne hanno come somma 15."
+              },
+              {
+                "speaker": "Bambini",
+                "id": 2,
+                "text": "Wow, signor investigatore, e' davvero bravissimo! Come fa a capire tutto cosi' in fretta?"
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Grazie, ragazzi. Ma ora ho bisogno del vostro aiuto. Sapete qualcosa sulla casa abbandonata di questo quartiere?"
+              },
+              {
+                "speaker": "Bambini",
+                "id": 2,
+                "text": "Certo! La trovi se segui queste parole: Dove i fiori non crescono e il vento sussurra, la' il mistero si chiude nella curva piu' scura.\nAddio ihihih."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Hey, aspettate un attimo, siate piu' precisi!\n... sono scappati..."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 0
+      },
+      "zone_2": {
+        "puzzle": [
+          {
+            "id": 3,
+            "title": "Il lucchetto",
+            "description": "Davanti alla casa abbandonata noti che la porta e' chiusa con un lucchetto arrugginito.\nSulla porta c'e' scritto:\n\"Solo chi sa contare risolvera' questo enigma\".\nIl lucchetto presenta una combinazione di 4 cifre.",
+            "solution": "1119",
+            "hint": "Solo le prime ti aiuteranno",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "vbox-padding-cats",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-cats",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta",
+                                  "text": "La somma di 12 e 7\nLa differenza tra 20 e 8\nIl doppio di 5\nLa meta' di 18"
+
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "pane-cats",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageView",
+                                      "styleClass": "cats-image",
+                                      "image": "padlock.png"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label",
+                              "styleClass": "label-impronta",
+                              "text": "Inserisci la combinazione:"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "TextField",
+                              "styleClass": "input-textfield-padlock"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+
+          }
+        ],
+        "exploration": {
+          "roomName": "Casa abbandonata",
+          "imageList": [
+            "suburbsDistrict21.jpg"
+          ],
+          "imagesMap": {
+            "suburbsDistrict21.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "current": 0,
+              "diary": ""
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Finalmente, dopo tutta la giornata l'ho trovata. Quindi oltre quella porta ci sono stati movimento sospetti eh?... In effetti mi sembra un bel posto abbandonato dove svolgere attivita' criminali, proprio qui, nei sobborghi... Diamo subito un'occhiata."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 0
+      },
+      "zone_3": {
+        "puzzle": [
+          {}
+        ],
+        "exploration": {
+          "roomName": "Casa abbandonata",
+          "imageList": [
+            "suburbsDistrict3.jpg"
+          ],
+          "imagesMap": {
+            "suburbsDistrict3.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Zone",
+              "current": 0,
+              "diary": ""
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Niente. Non c'e' assolutamente nulla. Le stanze sono vuote, solo polvere che danza nei raggi di luce fioca...\nHo seguito ogni indizio, ogni passo, e per cosa? Per arrivare qui, a perdere tempo prezioso...\nSento una stretta allo stomaco. Se solo ci fosse un modo per tornare indietro... cancellare questa scelta sbagliata. Riprendere quei minuti, quelle ore che ho buttato via..."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 0
+      }
+    }
+  }
+}

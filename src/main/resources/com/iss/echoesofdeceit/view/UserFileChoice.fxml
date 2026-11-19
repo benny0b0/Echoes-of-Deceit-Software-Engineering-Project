@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="mainStackPane" styleClass="stack-hint" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.UserFileController">
+   <children>
+      <BorderPane>
+         <center>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" styleClass="vbox-hint" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 35px; -fx-font-weight: bold;" styleClass="description-text" text="Seleziona un utente" />
+                  <Label maxWidth="600.0" styleClass="description-text" text="Ogni profilo ti permette di salvare e gestire i tuoi progressi in modo indipendente. Scegli l'account con cui desideri continuare la tua indagine e rivedere i risultati ottenuti finora." textAlignment="JUSTIFY" wrapText="true" />
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0">
+                     <children>
+                        <Button fx:id="continueButton1" disable="true" mnemonicParsing="false" text="Vuoto" />
+                        <Button fx:id="continueButton2" disable="true" mnemonicParsing="false" text="Vuoto" />
+                        <Button fx:id="continueButton3" disable="true" mnemonicParsing="false" text="Vuoto" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="exitContinueGame" mnemonicParsing="false" styleClass="buttonPuzzle" text="Menu Principale" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,29 @@
+{
+  "Utente_1" : {
+    "remainingDays" : 4,
+    "completedPuzzles" : {
+      "1" : true,
+      "2" : true,
+      "3" : false
+    },
+    "localItemList" : [ ],
+    "inventory" : {
+      "items" : [ {
+        "name" : "Mappa di Odill",
+        "description" : "Rappresenta la citta' di Odill che e' suddivisa in sei distinti quartieri: il Centro storico, cuore antico della citta'; i Sobborghi, zone periferiche e residenziali; il Quartiere popolare, area densamente abitata da classi meno abbienti; le Accademie, sede di istituzioni culturali e universitarie; il Mercato, centro commerciale e di scambio; e il Quartiere nobiliare, residenza della nobilta' e della ricca elita' cittadina.",
+        "image" : "MappaFinale.png"
+      }, {
+        "name" : "Lettera misteriosa",
+        "description" : "Lettera scritta dal ladro e trovata accanto al quadro nel centro storico. Nel retro presenta strani numeri, apparentemente insensati.",
+        "image" : "letterafr.png"
+      } ]
+    },
+    "currentDistrict" : {
+      "DistrictName" : "historicCenter",
+      "ZoneName" : "2"
+    },
+    "notebook" : {
+      "diary" : "CENTRO STORICO\nSono arrivato a Odill con un invito che non si poteva rifiutare: ammirare il quadro simbolo della citta', quell'opera leggendaria di cui avevo sentito parlare a lungo. Ma ora, davanti a me, c'e' qualcosa di diverso, qualcosa che non torna. Il dipinto esposto e' un falso, non c'e' alcun dubbio.\nAccanto al quadro, una lettera mi attende. Non c'e' bisogno di pensarci troppo: qualunque cosa contenga, potrebbe essere la chiave per svelare cosa sta accadendo davvero.\n\nHo raccolto la lettera e ho capito subito che c'era qualcosa di piu' di un semplice avvertimento. Le parole sono chiare, ho quattro giorni per trovare il quadro. Un ultimatum asciutto, ma carico di tensione.  \nDietro la lettera, pero', c'erano quei numeri. Scritte a mano cifre apparentemente senza senso. Ho provato a decifrarle, ma non ci sono riuscito. Forse un codice, forse una traccia, ma di certo non posso fare da solo.  \nAdesso il mio prossimo passo e' chiaro: devo trovare qualcuno che sappia qualcosa di piu'. Qualcuno che abbia visto o sentito dettagli di questo furto. Ogni minuto conta, e quei quattro giorni stanno gia' correndo via.\n\nHo analizzato il quadro con attenzione, cercando di cogliere ogni dettaglio che potesse tradire il mistero. Al posto della firma dell'artista, pero', ho trovato qualcosa di insolito: una serie di parole che a prima vista sembravano casuali, prive di significato. Ma non erano casuali.\nDopo un attento esame, ho capito che erano cifrate con il cifrario di Cesare. Decifrando il messaggio, ho ottenuto la frase: \"Deserte dimore nascondono segreti.\"\nIl significato era chiaro, ma allo stesso tempo lasciava spazio a troppi interrogativi. Cosa intende per \"deserte dimore\"? E, soprattutto, dove dovrei cercare?\n\nHo parlato con la guardia ed era visibilmente nervosa mentre raccontava l'accaduto. Mi ha spiegato che ieri un ragazzino era inciampato vicino alla reception, attirando l'attenzione di tutti per un istante. Si era avvicinato per assicurarsi che stesse bene e, abbassandosi per aiutarlo, aveva perso di vista il resto.\nIl tono della sua voce si abbasso'. Quando si era rialzato, aveva urtato per errore un uomo con una ventiquattrore. Non gli aveva dato importanza sul momento... ma piu' tardi, quando avevano svelato il furto del quadro, si era accorto che non aveva piu' le chiavi dell'ingresso secondario.\nUn dettaglio importante. Troppo importante per essere ignorato.\nOra non ho scelta: devo recarmi all'ingresso secondario. Se c'e' una traccia lasciata da quell'uomo o da chiunque altro sia coinvolto, sara' li'. Ogni dettaglio potrebbe fare la differenza, e non posso permettermi di perdere altro tempo.\n"
+    }
+  }
+}

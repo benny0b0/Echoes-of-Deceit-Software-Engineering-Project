@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="mainStackPane" style="-fx-background-color: transparent" styleClass="stack-hint" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.AlertDeleteUserController">
+    <BorderPane>
+        <center>
+            <VBox fx:id="vboxAlert" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="30" styleClass="vbox-hint">
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" style="-fx-font-size: 35px; -fx-font-weight: bold;" styleClass="description-text" text="Seleziona l'utente da eliminare" />
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+               <children>
+                      <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="600" style="-fx-text-fill: #CC9817" styleClass="description-text" text="ATTENZIONE: L'eliminazione e' un'azione irreversibile. Una volta confermato, non sara' possibile recuperare i dati." textAlignment="JUSTIFY" wrapText="true" />
+                      <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="600" styleClass="description-text" textAlignment="JUSTIFY" wrapText="true" />
+               </children>
+            </VBox>
+
+                <ListView fx:id="userListView" prefHeight="125.0" prefWidth="300.0" styleClass="description-list-view" />
+            <HBox alignment="CENTER" spacing="50.0">
+               <children>
+                      <Button fx:id="confirmDeleteButton" disable="true" styleClass="buttonPuzzle" text="Elimina" />
+                      <Button fx:id="closeButton" styleClass="buttonPuzzle" text="Chiudi" />
+               </children>
+            </HBox>
+            </VBox>
+        </center>
+    </BorderPane>
+</StackPane>

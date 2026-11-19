@@ -1,0 +1,514 @@
+{
+  "academiesDistrict": {
+    "zones": {
+      "zone_1": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "Calligrafie",
+            "description": "A sinistra si trova la lettera lasciata dal ladro nel museo, mentre a destra sono presentati esempi di calligrafie che evidenziano caratteristiche distintive di diversi stili di scrittura. Confronta la calligrafia del ladro con gli esempi forniti per scoprire la sua mano dominante e in quale stato d'animo si trovava al momento della stesura.",
+            "solution": "2",
+            "hint": "Il modo con cui sono state scritte quelle frasi e' ben distinto",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "top",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "bottom",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "hbox-calligrafie",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-calligrafie",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "ImageView",
+                                  "styleClass": "img-lettera-front",
+                                  "image": "letteraRetroNoBack.png"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-calligrafie-right",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-right",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "VBox",
+                                      "styleClass": "vbox-calligrafie",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "Button",
+                                          "styleClass": "button-calligrafie",
+                                          "actionId": "100"
+                                        },
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "Button",
+                                          "styleClass": "button-calligrafie",
+                                          "actionId": "1"
+                                        },
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "Button",
+                                          "styleClass": "button-calligrafie",
+                                          "actionId": "100"
+                                        },
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "Button",
+                                          "styleClass": "button-calligrafie",
+                                          "actionId": "1"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageView",
+                                      "styleClass": "img-lettere",
+                                      "image": "letteraCalligrafieNoBack.png"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Studio del calligrafo",
+          "imageList": [
+            "academiesDistrict12.jpg"
+          ],
+          "imagesMap": {
+            "academiesDistrict12.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 0,
+              "diary": "\n\nQUARTIERE ACCADEMIE\nHo portato la lettera da un calligrafo esperto. Era un passo necessario: ogni dettaglio puo' fare la differenza. Dopo aver analizzato attentamente la scrittura, siamo arrivati a due conclusioni.\nPrima di tutto, il ladro usa la mano destra. Una deduzione semplice, ma utile. Poi, osservando i dettagli nelle lettere, abbiamo compreso che chi ha scritto quella lettera era calmo.\nOgni pezzo del puzzle sembra piu' vicino, ma il quadro generale e' ancora incompleto. Devo continuare a scavare.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "calligrafo.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Buongiorno, signor calligrafo. Avrei bisogno del suo esperto parere per analizzare la calligrafia di questa lettera. Purtroppo non ho molto tempo, i giorni a mia disposizione stanno scadendo e devo ricavare piu' informazioni possibili sul ladro del quadro."
+              },
+              {
+                "speaker": "Calligrafo",
+                "id": 2,
+                "text": "Ah, certo, certo... hic... vediamo un po'... questa 'r' e' molto strana ... hic... e questa 't'... sembra... si, sembra... no, forse mi sbaglio..."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Mi scusi, ha bevuto qualcosa? Sta diventando difficile seguirla."
+              },
+              {
+                "speaker": "Calligrafo",
+                "id": 2,
+                "text": "hic... Beh, ho bevuto solo un bicchiere... o due... comunque, questa scrittura e' insolita. Ma sono troppo annebbiato... senti un po', ora ti do delle scritte che ho fatto fare a delle persone con caratteristiche simili. Svolgilo tu il mio lavoro, io vado a sciacquarmi il viso."
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "calligrafo.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Bene, quindi il ladro scrive con la mano destra, e quando ha redatto la lettera, sembra fosse molto calmo."
+              },
+              {
+                "speaker": "Calligrafo",
+                "id": 2,
+                "text": "Ora mi sono ripreso! Seguimi nella prossima stanza."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 0
+      },
+      "zone_2": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "Le mappe",
+            "description": "Il calligrafo ha notato l'inchiostro pregiato utilizzato nella lettera. Questo viene venduto solamente in due negozi in citta', individua il quartiere corretto.",
+            "solution": "1",
+            "hint": "Analizza la locazione dei posti contrassegnati dal simbolo dell'inchiostro, in quale potrebbe essere andato il ladro?",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "vbox-main-mappe",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "center-padding-hbox",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-main-mappe",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "Label",
+                                      "styleClass": "label-impronta",
+                                      "text": "Quartiere nobiliare"
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "VBox",
+                                      "styleClass": "vbox-img-mappe",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-mappe",
+                                          "image": "Mappa1.png",
+                                          "actionId": "100"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "Label"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "VBox",
+                                  "styleClass": "vbox-main-mappe",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "Label",
+                                      "styleClass": "label-impronta",
+                                      "text": "Mercato"
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "VBox",
+                                      "styleClass": "vbox-img-mappe",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-mappe",
+                                          "image": "Mappa2.png",
+                                          "actionId": "1"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Studio del calligrafo",
+          "imageList": [
+            "academiesDistrict21.jpg"
+          ],
+          "imagesMap": {
+            "academiesDistrict21.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 0,
+              "diary": "\nIl calligrafo mi ha dato una pista da seguire. Dopo aver analizzato attentamente l'inchiostro usato per scrivere la lettera, ha notato qualcosa di particolare: una composizione chimica insolita, caratteristica di un inchiostro venduto in pochi posti in citta'.\nTuttavia penso che la scelta corretta sia quella di andare nel negozio specializzato nel mercato. Un luogo poco frequentato, nascosto tra bancarelle e vicoli stretti. E' li' che devo andare ora.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "calligrafo.png",
+            "conversation": [
+              {
+                "speaker": "Calligrafo",
+                "id": 2,
+                "text": "Guardando la lettera ho notato che e' stato utilizzato un inchiostro pregiato. Esistono solamente due negozi in questa citta' che lo vendono."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Ottimo, ma come le ho detto, non ho tempo a sufficienza per visitarli entrambi..."
+              },
+              {
+                "speaker": "Calligrafo",
+                "id": 2,
+                "text": "Certo, comprendo. Tieni qui ho le mappe dei quartieri dove si trovano i negozi. Dato il contesto penso possa comprendere quale sia la scelta migliore..."
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "calligrafo.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Perfetto, ora so dove mi devo dirigere. Grazie mille per il tempo dedicatomi, buona giornata."
+              },
+              {
+                "speaker": "Calligrafo",
+                "id": 2,
+                "text": "Buona fortuna, speriamo di poter festeggiare con un una bottiglia di vino, anzi due!"
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 0
+      },
+      "zone_3": {
+        "puzzle": [
+          {
+            "id": 3,
+            "title": "Enigma dei gatti",
+            "description": "Il mendicante ti avverte che, se riuscirai a risolvere l'enigma, ti dara' un biglietto che afferma di essere stato consegnato direttamente dal ladro.",
+            "solution": "5",
+            "hint": "La formulazione rende facile dimenticare cosa stai realmente cercando.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "vbox-padding-cats",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-cats",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta",
+                                  "text": "5 gatti possono catturare 5 topi in 5 minuti. Tenendo presente questo, quanti gatti ci vogliono per catturare 100 topi in 100 minuti?"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "pane-cats",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageView",
+                                      "styleClass": "cats-image",
+                                      "image": "cats.jpg"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "Label",
+                              "styleClass": "label-impronta",
+                              "text": "Inserisci il numero:"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "TextField",
+                              "styleClass": "input-textfield-padlock"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Via principale",
+          "imageList": [
+            "academiesDistrict31.jpg",
+            "academiesDistrict32.jpg"
+          ],
+          "imagesMap": {
+            "academiesDistrict31.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Zone",
+              "current": 0,
+              "diary": ""
+            },
+            "academiesDistrict32.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 1,
+              "item": {
+                "name": "Foglietto",
+                "description": "Consegnato da un mendicante e scritto dal ladro. C'e' scritto: \"Se vuoi trovarmi dovrai andare dove le chiacchere iniziano quando sorge il sole e terminano con la luna\"",
+                "image": "LetteraMendicante.png"
+              },
+              "diary": "\nUn mendicante mi ha lasciato un biglietto, consegnatogli direttamente dal ladro in persona. Chissa' se e' una pista corretta da seguire, o se si tratta di un altro tentativo di confondermi. Il contenuto potrebbe essere genuino, ma il mio istinto mi dice che potrebbe anche essere un trucco per sviare le indagini. Ogni mossa del ladro e' un enigma e non posso permettermi di abbassare la guardia. Sara' meglio analizzare ogni dettaglio prima di prendere qualsiasi decisione.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "ragazzi.png",
+            "conversation": [
+              {
+                "speaker": "Ragazzi",
+                "id": 2,
+                "text": "Ehi, salve! Lei non e' di qui, vero? Noi siamo qua da un sacco di tempo, piu' di quanto possa immaginare. Vogliamo darle un consiglio."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Salve, ragazzi! Che gentili! Quale consiglio avete per me?"
+              },
+              {
+                "speaker": "Ragazzi",
+                "id": 2,
+                "text": "Non ascolti quel tipo in fondo alla strada, il mendicante. E' un po' fuori di testa, fa cose strane, come bere da una bottiglia e poi... bam! Gli cresce un naso rosso, tutto all'improvviso!"
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "mendicante.png",
+            "conversation": [
+              {
+                "speaker": "Mendicante",
+                "id": 2,
+                "text": "Eh, guarda un po' chi c'e', il famoso investigatore. So chi sei, eh. Il ladro m'ha dato sto biglietto per te e m'ha pure pagato un bel po' per portartelo. Pero', visto che te la tiri tanto, voglio vederti all'opera. Ti propongo un enigma, cosi' vediamo se sei davvero cosi' bravo come dici. Se lo risolvi, il biglietto e' tuo."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Ah, vedo che vuoi mettermi alla prova. Va bene, sono pronto. Dimmi pure l'enigma, e vedrai che non sara' un problema risolverlo."
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "mendicante.png",
+            "conversation": [
+              {
+                "speaker": "Mendicante",
+                "id": 2,
+                "text": "Eh, cavolo, ci sei arrivato davvero! Non me l'aspettavo, eh! Vabbe', come promesso, ecco il biglietto."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 1
+      }
+    }
+  }
+}

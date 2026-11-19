@@ -1,0 +1,1380 @@
+{
+  "nobleDistrict": {
+    "zones": {
+      "zone_1": {
+        "puzzle": [
+          {
+            "id": 2,
+            "title": "Le ghiere",
+            "description": "Hai inseguito il ladro fino a una maestosa reggia, un edificio imponente e misterioso. Non appena e' entrato, le grandi porte si sono chiuse dietro di lui con un tonfo deciso. Ora ti trovi di fronte a questo ostacolo e devi trovare un modo per riaprirle e continuare la tua caccia.",
+            "solution": "aaa",
+            "hint": "Ricorda: dalle impostazioni del gioco puoi regolare il volume.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "styleClass": "border-pane-1",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "top",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "hbox-words",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "CodedLabel",
+                              "text": "k",
+                              "styleClass": "words-noble"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "CodedLabel",
+                              "text": "p",
+                              "styleClass": "words-noble"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "CodedLabel",
+                              "text": "a",
+                              "styleClass": "words-noble"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "StackPane",
+                          "styleClass": "hbox-words",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "StackPane",
+                              "styleClass": "pane-cats",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "ImageView",
+                                  "styleClass": "cats-image",
+                                  "image": "ghiera.jpg"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "bottom",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "hbox-key-buttons",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-key-buttons",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta",
+                                  "text": "Ghiera 1"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-key-buttons-2",
+                                  "children": [
+
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle-noble",
+                                      "text": "- 1",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle-noble",
+                                      "text": "+ 1",
+                                      "actionId": "100"
+                                    }
+
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-key-buttons",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta",
+                                  "text": "Ghiera 2"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-key-buttons-2",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle-noble",
+                                      "text": "- 1",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle-noble",
+                                      "text": "+ 1",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "vbox-key-buttons",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "Label",
+                                  "styleClass": "label-impronta",
+                                  "text": "Ghiera 3"
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-key-buttons-2",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle-noble",
+                                      "text": "- 1",
+                                      "actionId": "100"
+                                    },
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "SpecialButton",
+                                      "styleClass": "buttonSignPuzzle-noble",
+                                      "text": "+ 1",
+                                      "actionId": "100"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Ingresso della reggia",
+          "imageList": [
+            "nobleDistrict11.jpg"
+          ],
+          "imagesMap": {
+            "nobleDistrict11.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 0,
+              "diary": "\n\nQUARTIERE NOBILIARE\nArrivato davanti all'ingresso della reggia, mi fermo un istante. Il cuore batte piu' forte, mentre il mio sguardo si perde tra le decorazioni imponenti e il silenzio quasi surreale che avvolge l'edificio. Mi chiedo se sia giusto proseguire, se valga davvero la pena entrare nella tana del Bianconiglio, sapendo che potrei non avere il controllo di cio' che mi aspetta.\nOgni indizio mi ha condotto fin qui, eppure la sensazione che sto per oltrepassare un confine invisibile non mi abbandona. Respiro profondamente. Non c'e' piu' spazio per i dubbi: devo scoprire cosa si cela dietro queste porte.\n\nDopo un inseguimento serrato, il ladro si e' infilato in una stanza. Non ho esitato e l'ho seguito subito, ma appena entrato, qualcosa non andava. La stanza era vuota, come se lui fosse svanito nel nulla.\nHo controllato rapidamente ogni angolo, cercando una via d'uscita nascosta, ma non c'era traccia di lui. Prima che potessi capire cosa stesse succedendo, le porte alle mie spalle si sono chiuse con un tonfo secco. Ho provato a riaprirle, ma sono bloccate.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Sembra che si sia rifugiato in questa villa lussuosa. Le finestre sono fuori questione, troppo alte o chiuse. Non resta che provare dalla porta principale. Vediamo se questa e' la sua ultima mossa."
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Finalmente sono riuscito ad aprire questa porta."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Ehi, tu! Fermati immediatamente!"
+              }
+            ]
+          }
+        ]
+      },
+      "zone_2": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "Il muro",
+            "description": "Accanto al muro noti questa scritta incisa:\n\n\"Una porta e' nascosta nel muro.\nApparira' un sentiero \nforte e abbastanza chiaro\nFatto di stelle che brillano\nciascuna nel proprio quadrato\"\n\nSeleziona la mattonella che fara' apparire la porta invisibile.",
+            "solution": "1",
+            "hint": "Alcuni mattoni hanno delle luci particolari, probabilmente indicano qualcosa",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "inner-vbox-ds",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaMoltoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaMoltoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaMoltoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaMoltoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaMoltoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaMoltoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hvbox-noble-3",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaGiallaPocoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaArancioneMedioLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "stellaBiancaMoltoLuminosa.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass": "stackpane-noble-3",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "img-noble-3",
+                                      "image": "mattonella.png",
+                                      "actionId": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+
+
+          }
+        ],
+        "exploration": {
+          "roomName": "Stanza trappola",
+          "imageList": [
+            "nobleDistrict22.jpg"
+          ],
+          "imagesMap": {
+            "nobleDistrict22.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "diary": "\nSono riuscito a uscire dalla stanza vuota, ma non senza fatica. Una parete della stanza era decorata con strane stelle di varia colorazione e intensita', disposte in un pattern che a prima vista sembrava solo decorativo. Ma qualcosa non quadrava. Infatti premendo leggermente sulla mattonella corretta, con un rumore sordo, un meccanismo nascosto si e' attivato e una porta invisibile si e' aperta davanti a me. Devo proseguire.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Accidenti, mi ha teso una trappola. Furbo, devo dargliene atto... ma ora sono intrappolato in questa stanza."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Calma, niente panico. Devo ingegnarmi qualcosa. Ogni trappola ha una via d'uscita, e io trovero' la mia."
+              }
+            ]
+          }
+        ]
+      },
+      "zone_3": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "La leva",
+            "description": "Il ladro ha architettato una trappola finale e minaccia di distruggere l'inestimabile quadro, simbolo di Odill, gettandolo nell'acido. Devi trovare un modo per liberarti dalle sbarre. Osserva attentamente la scena e scegli in quale direzione spostare la leva, affinché il meccanismo si attivi e premi il pulsante verde.",
+            "solution": "1",
+            "hint": "Analizza il movimento degli ingranaggi sia spostando la leva sinistra, sia verso destra.",
+
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "hbox-n3",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "ImageButton",
+                              "image": "leftArrow.png",
+                              "styleClass": "button-n3",
+                              "actionId": "100"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "ImageView",
+                              "image": "gears.png",
+                              "styleClass": "img-n3"
+                            },
+                            {
+                              "type": "PuzzleElement",
+                              "element": "ImageButton",
+                              "image": "rightArrow.png",
+                              "styleClass": "button-n3",
+                              "actionId": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Il calderone",
+          "imageList": [
+            "nobleDistrict31.jpg"
+          ],
+          "imagesMap": {
+            "nobleDistrict31.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "diary": ""
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "ladro.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Non ci credo, un'altra trappola.\nNon puoi farla franca, ladro! Non ti lascero' andare cosi' facilmente!"
+              },
+              {
+                "speaker": "Ladro",
+                "id": 2,
+                "text": "Ah, detective, ti sei proprio messo nei guai, eh? Ora ti tocca guardare mentre getto il quadro nell'acido. Non c'e' piu' nulla che tu possa fare!"
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Non essere troppo sicuro di te, il gioco non e' finito. Se pensi che mi fermero' qui dietro, ti sbagli!"
+              },
+              {
+                "speaker": "Ladro",
+                "id": 2,
+                "text": "Guarda bene, detective. Nessuna fuga, nessuna salvezza."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Ti sbagli, ladro. Trovero' un modo per uscire, e quando lo faro', sarai il prossimo a finire in trappola!"
+              },
+              {
+                "speaker": "Ladro",
+                "id": 2,
+                "text": "Fai pure, ma non ti resta molto tempo..."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,725 @@
+{
+  "popularDistrict": {
+    "zones": {
+      "zone_1": {
+        "puzzle": [
+          {
+            "id": 1,
+            "title": "La casa abbandonata",
+            "description": "La signora ti guarda con aria confusa ma dopo qualche attimo ti dice:\n\n\"Non ricordo di preciso dove si trova, ma posso darti qualche indicazione: Partendo dalla porta principale di quella casa, gira a sinistra. Poi, al primo incrocio che incontri, gira a destra. Prosegui e, quando arriverai al successivo incrocio, gira di nuovo a destra. A quel punto, ti troverai di fronte al sole del mattino\"\n\nSeleziona la casa che corrisponde alla descrizione.",
+            "solution": "1",
+            "hint": "Ricorda in che direzione sorge il sole al mattino.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "HBox",
+                          "styleClass": "hvbox-grid",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "VBox",
+                              "styleClass": "inner-vbox-ds",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hvbox-grid",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-grid-button",
+                                          "image": "house2.png",
+                                          "actionId": "100"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-grid-button",
+                                          "image": "house3.png",
+                                          "actionId": "100"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hvbox-grid",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-grid-button",
+                                          "image": "house3.png",
+                                          "actionId": "100"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hvbox-grid",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-grid-button",
+                                          "image": "house4.png",
+                                          "actionId": "100"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-grid-button",
+                                          "image": "house1.png",
+                                          "actionId": "1"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hvbox-grid",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageButton",
+                                          "styleClass": "img-grid-button",
+                                          "image": "house2.png",
+                                          "actionId": "100"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "PuzzleComposite",
+                                      "element": "StackPane",
+                                      "styleClass": "stackpane-image-grid",
+                                      "children": [
+                                        {
+                                          "type": "PuzzleElement",
+                                          "element": "ImageView",
+                                          "image": "void.png"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "StackPane",
+                              "children": [
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "ImageView",
+                                  "image": "compass.png"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+
+        ],
+        "exploration": {
+          "roomName": "Corso principale",
+          "imageList": [
+            "popularDistrict11.jpg"
+          ],
+          "imagesMap": {
+            "popularDistrict11.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 0,
+              "diary": "\n\nQUARTIERE POPOLARE\nMentre vagavo per il quartiere, ho deciso di chiedere informazioni a una vecchia signora. Seppur con qualche difficolta' sono riuscito a capire dove si trova la casa abbandonata. Non so se fidarmi del tutto, ma non ho altre piste da seguire. Ora non resta che vedere se quel posto nasconde davvero qualcosa.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "vecchia.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Mi scusi, signora. Sto cercando una casa abbandonata, dovrebbe essere qui in questo quartiere. Sa dove potrei trovarla?"
+              },
+              {
+                "speaker": "Vechietta",
+                "id": 2,
+                "text": "Ah, si, la casa... la conosco. Ma, oh caro, non ricordo in quale strada esattamente ci devo pensare. Sono passati anni da quando l'ho vista. Tanti anni e tanti bei ricordi di quando ancora ero una giovane fanciulla in cerca di un marito... "
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 1,
+                "text": "Capisco della sua giovane e tenera infanzia, pero' magari puo' darmi qualche dettaglio? Qualcosa che possa aiutarmi a riconoscerla?"
+              },
+              {
+                "speaker": "Vechietta",
+                "id": 2,
+                "text": "Ah si, scusami, mi piace tanto parlare con i giovanotti come te. Allora, adesso che ci penso non ricordo di preciso dove si trova, ma posso darti qualche indicazione."
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "vecchia.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Perfetto! Ho capito dove si trova, la ringrazio infinitamente"
+              },
+              {
+                "speaker": "Vechietta",
+                "id": 2,
+                "text": "Eh eh eh... Di nulla caro."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 0
+      },
+      "zone_2": {
+        "puzzle": [
+          {
+            "id": 2,
+            "title": "Pianoforte",
+            "description": "Vicino al pianoforte c'e' una cassaforte collegata ad esso. Si deve trovare il modo per aprirla, forse sara' necessario utilizzare tutti gli strumenti a tua disposizione...",
+            "solution": "o1s1o1ggd1",
+            "hint": "Ascolta e riproduci...",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "BorderPane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "top",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "StackPane",
+                          "styleClass": "stackpane-carillon",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "ImageButton",
+                              "styleClass": "img-carillon",
+                              "image": "carillon.png"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "center",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "VBox",
+                          "styleClass": "vbox-piano",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hbox-label-piano",
+                              "children": [
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "F4"},
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "G4" },
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "A4" },
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "B4" },
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "C5" },
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "D5" },
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "E5"},
+                                { "type": "PuzzleElement", "element": "Label", "styleClass": "label-piano", "text": "F5" }
+                              ]
+                            },
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "StackPane",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "HBox",
+                                  "styleClass": "hbox-piano",
+                                  "children": [
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-DO", "image": "piano.png",  "actionId":"i" },
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-RE", "image": "piano.png",  "actionId":"o" },
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-MI", "image": "piano.png",  "actionId":"p" },
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-FA", "image": "piano.png",  "actionId":"a" },
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-SOL", "image": "piano.png", "actionId":"s" },
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-LA", "image": "piano.png",  "actionId":"d" },
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-SI", "image": "piano.png",  "actionId":"f" },
+                                    { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-piano-DO2", "image": "piano.png", "actionId":"g" }
+                                  ]
+                                },
+                                { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-nota-nera1", "image": "notaNera.png",  "actionId":"I1" },
+                                { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-nota-nera2", "image": "notaNera.png",  "actionId":"O1" },
+                                { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-nota-nera3", "image": "notaNera.png",  "actionId":"P1" },
+                                { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-nota-nera4", "image": "notaNera.png",  "actionId":"S1" },
+                                { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-nota-nera5", "image": "notaNera.png",  "actionId":"D1" },
+                                { "type": "PuzzleElement", "element": "ImageButton", "styleClass": "img-nota-nera6", "image": "notaNeraTagliata.png",  "actionId":"G1" },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "ImageView",
+                                  "styleClass": "img-barra-nera1",
+                                  "image": "barraNera.png"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "ImageView",
+                                  "styleClass": "img-barra-nera2",
+                                  "image": "barraNera.png"
+                                },
+                                {
+                                  "type": "PuzzleElement",
+                                  "element": "ImageView",
+                                  "styleClass": "img-barra-nera3",
+                                  "image": "barraNera.png"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exploration": {
+          "roomName": "Casa abbandonata",
+          "imageList": [
+            "popularDistrict21.jpg"
+          ],
+          "imagesMap": {
+            "popularDistrict21.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "item": {
+                "name": "Biglietto",
+                "description": "Trovato dentro la cassaforte del quartiere popolare. C'e' scritto \"Inizia con la S e segui il senso orario\".",
+                "image": "biglietto.png"
+              },
+              "diary": "\nLa casa abbandonata era esattamente come me l'ero immaginata: muri scrostati, finestre rotte e un silenzio che metteva i brividi. Nella stanza principale, al centro, un pianoforte impolverato attirava l'attenzione. Sopra di esso, un piccolo carillon dall'aspetto antico. Accanto, una cassaforte.\nHo deciso di azionare il carillon. La melodia che ne usciva era semplice, ma ipnotica. Seguendo l'istinto, ho provato a riprodurre la stessa sequenza di note sul pianoforte. Con un click metallico, la cassaforte si e' aperta.\nAll'interno c'era solo un biglietto, con un messaggio criptico: \"Inizia con la S e segui il senso orario.\"\nUn altro indizio. Chissa' cosa significa e, soprattutto, dove mi portera'.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Qualcosa mi dice che qui c'e' piu' di quanto sembri. Un carillon, un pianoforte, una cassaforte... Tutto questo avra' un senso?"
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Riproducendo la stessa melodia del carillion la cassaforte si e' sbloccata, vediamo cosa c'e' al suo interno."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Ah, un biglietto... \"Inizia con la S e segui in senso orario.\" Ma cosa significa? Un luogo? Un oggetto? Devo pensarci. Forse ha a che fare con la prossima stanza. Forse no. Ma non posso ignorarlo."
+              }
+            ]
+          }
+        ],
+        "numberOfItems": 1
+      },
+      "zone_3": {
+        "puzzle": [
+          {
+            "id": 3,
+            "title": "La lettera",
+            "description": "L'orologio e' molto particolare, non ci sono numeri ma lettere. Probabilmente con una chiave di decriptazione per decifrare il codice dell'orologio, i numeri presenti nella lettera possono assumere un significato.",
+            "solution": "pernoiarubainienterimpiantisoloadrenalinaunattimodivitaveravalemillevitedigrigiamonotonia",
+            "hint": "Hai raccolto un oggetto importante per risolvere l'enigma.",
+            "stackpane": {
+              "type": "PuzzleComposite",
+              "element": "StackPane",
+              "styleClass": "center-stack-pane",
+              "children": [
+                {
+                  "type": "PuzzleComposite",
+                  "element": "StackPane",
+                  "styleClass": "clock-stackpane",
+                  "children": [
+                    {
+                      "type": "PuzzleComposite",
+                      "element": "BorderPane",
+                      "styleClass": "border-pane-clock",
+                      "children": [
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "center",
+                          "children": [
+                            {
+                              "type": "PuzzleComposite",
+                              "element": "HBox",
+                              "styleClass": "hbox-numbers-clock",
+                              "children": [
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass":"stackPane-hbox-of-numbers-clock",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "Label",
+                                      "styleClass": "label-impronta-clock",
+                                      "text": "12 13 16 2 14 15 6 16 4 7 6 15 2 15 13 2 5 13 16 15 17 12 15 6 2 5 15 1 14 11 14 6 8 16 13 2 6 11 15 2 6 4 2 6 5 5 15 17 14 8 15 3 15 5 6 3 13 16 6 3 6 11 13 17 15 11 11 \n13 3 15 5 13 8 15 10 16 15 10 15 6 17 14 2 14 5 14 2 15 6"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "PuzzleComposite",
+                                  "element": "StackPane",
+                                  "styleClass":"stackPane-hbox-of-numbers-clock",
+                                  "children": [
+                                    {
+                                      "type": "PuzzleElement",
+                                      "element": "ImageButton",
+                                      "styleClass": "clock-image",
+                                      "image": "clock.png"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "PuzzleComposite",
+                          "element": "bottom",
+                          "styleClass": "border-pane-clock",
+                          "children": [
+                            {
+                              "type": "PuzzleElement",
+                              "element": "TextArea",
+                              "text": "",
+                              "styleClass": "text-area-puzzle"
+
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+
+          }
+        ],
+        "exploration": {
+          "roomName": "Casa abbandonata",
+          "imageList": [
+            "popularDistrict31.jpg",
+            "popularDistrict32.jpg"
+          ],
+          "imagesMap": {
+            "popularDistrict32.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Puzzle",
+              "nextNextScene": "Dialog",
+              "current": 1,
+              "diary": "\n\"Per noia rubai, niente rimpianti, solo adrenalina. Un attimo di vita vera vale mille vite di grigia monotonia.\"\nE' cio' che c'era scritto nella lettera che ho potuto decifrare solamente arrivato qui. Queste parole mi hanno colpito come un pugno. Non era solo un furto, era una sfida, una fuga dalla banalita'. Chiunque avesse scritto quelle righe non cercava denaro o vendetta, ma un brivido, un momento di pura liberta'.\\nSe voglio scoprire altri segreti legati alla lettera, devo farmi aiutare da un esperto alle accademie.\n"
+            },
+            "popularDistrict31.jpg": {
+              "nextTypeOfScene": "Dialog",
+              "nextScene": "Zone",
+              "current": 0,
+              "item": {
+                "name": "Capello del ladro",
+                "description": "Un capello color ambrato appartenente al ladro. E' stato trovato sulla poltrona della casa abbandonata nel quartiere popolare.",
+                "image": "capello_inventario.png"
+              },
+              "diary": "\nHo trovato un capello color ambrato che sicuramente appartiene al ladro, spero possa essermi utile nelle indagini.\n"
+            }
+          }
+        },
+        "dialogs": [
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Ecco qua un indizio interessante! Un capello del ladro! Questo lo conservo, potra' tornare utile per le indagini."
+              }
+
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Un orologio... curioso. Al posto dei numeri ci sono delle lettere. A cosa serve un orologio del genere? Sara' forse collegato alla lettera?"
+              }
+            ]
+          },
+          {
+            "investigator": "investigator.png",
+            "interlocutor": "void.png",
+            "conversation": [
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "\"Per noia rubai, niente rimpianti, solo adrenalina. Un attimo di vita vera vale mille vite di grigia monotonia.\"\nAdrenalina e noia... Quindi e' questo il movente? Un furto per spezzare la monotonia? Non c'e' logica, solo un capriccio di chi cerca un brivido.\nEppure, non torna tutto. Perché lasciarmi questo messaggio? Vuole giustificarsi o provocarmi? Sia come sia, non mi fermero' qui. Se pensa che basti una frase a farmi desistere, si sbaglia di grosso."
+              },
+              {
+                "speaker": "Investigatore",
+                "id": 0,
+                "text": "Ad ogni modo, non ho ancora risolto tutto. Questa lettera nasconde altro, lo sento. Le parole hanno un peso, ma forse e' la calligrafia che puo' rivelarmi di piu'. Potrei scoprire qualcosa sull'autore, sul suo stato d'animo... o persino un dettaglio che mi e' sfuggito.\nDevo andare alle accademie. Li' c'e' un bravo calligrafo. Se qualcuno puo' aiutarmi a decifrare questo enigma, e' lui."
+              }
+            ]
+          }
+
+        ],
+        "numberOfItems": 1
+      }
+
+
+    }
+  }
+}

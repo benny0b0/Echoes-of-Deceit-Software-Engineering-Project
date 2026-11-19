@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="stack-pane-game-over" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.EndingController">
+    <children>
+        <BorderPane>
+            <top>
+                <Label styleClass="title-end-game" style="-fx-text-fill: green" text="Hai vinto!" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="40.0" />
+               </BorderPane.margin></Label>
+            </top>
+            <center>
+                <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                    <Label styleClass="label-game-over" fx:id="labelText" text="" textAlignment="JUSTIFY" wrapText="true" BorderPane.alignment="CENTER" />
+               <BorderPane.margin>
+                  <Insets left="40.0" right="40.0" />
+               </BorderPane.margin>
+                </VBox>
+            </center>
+         <bottom>
+            <Button fx:id="btnMainMenu" styleClass="button-game-over" mnemonicParsing="false" text="Torna al menu principale" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="30.0" />
+               </BorderPane.margin></Button>
+         </bottom>
+        </BorderPane>
+    </children>
+</StackPane>

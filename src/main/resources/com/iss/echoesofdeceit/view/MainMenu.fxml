@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="mainMenuContainer" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.MainMenuController">
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+       <top>
+           <Label id="mainTitle" text="Echoes of Deceit" BorderPane.alignment="CENTER" />
+       </top>
+      <padding>
+         <Insets bottom="200.0" top="80.0" />
+      </padding>
+      <center>
+          <VBox fx:id="mainMenuVBox" alignment="CENTER" BorderPane.alignment="CENTER">
+              <Button fx:id="btnNewGame" text="Nuova partita" />
+              <Button fx:id="btnContinue" disable="true" text="Carica partita" />
+              <Button fx:id="btnExit" text="Esci dal Gioco" />
+          </VBox>
+      </center>
+   </BorderPane>
+</StackPane>

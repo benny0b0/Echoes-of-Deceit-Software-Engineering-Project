@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="IntroductionContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="IntroductionContainer1" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.IntroductionController">
+    <children>
+        <!-- Sfondo blurrato -->
+        <Region id="blurredBackground" fx:id="blurredBackground" />
+        <!-- Layout principale -->
+        <BorderPane>
+            <bottom>
+                <VBox prefWidth="200.0" BorderPane.alignment="BOTTOM_CENTER">
+                    <VBox alignment="TOP_RIGHT" minWidth="-Infinity">
+                        <Button fx:id="btnSkip" mnemonicParsing="false" text="Skip" />
+                        <Button fx:id="btnNext" mnemonicParsing="false" text="Avanti" />
+                  <VBox.margin>
+                     <Insets right="80.0" />
+                  </VBox.margin>
+                    </VBox>
+                    <!-- Label con dimensioni fisse e VBox.vgrow="ALWAYS" per adattarsi -->
+                    <Label fx:id="glassLabel" alignment="CENTER" styleClass="label-style" text="Odill e' una cittadella incastonata tra dolci colline e limpidi fiumi, un gioiello che brilla per la sua quiete e il suo amore per la bellezza. Le strade, lastricate di pietra chiara, ospitano caffe' accoglienti e botteghe d'arte, mentre le facciate delle case, ornate da finestre fiorite, raccontano secoli di storia. Il cuore pulsante della citta' e' il suo museo, un luogo che custodisce tesori d'inestimabile valore, un richiamo irresistibile per artisti, studiosi e visitatori. Ma a Odill, l'arte non e' solo un vanto, e' l'anima stessa della comunita', una fonte di orgoglio che unisce ogni abitante." wrapText="true" />
+
+                </VBox>
+            </bottom>
+            <padding>
+            </padding>
+
+        </BorderPane>
+    </children>
+</StackPane>

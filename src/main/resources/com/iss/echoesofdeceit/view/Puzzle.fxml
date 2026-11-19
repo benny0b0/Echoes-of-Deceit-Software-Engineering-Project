@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="mainStackPane" styleClass="main-stack-pane" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.PuzzleController">
+    <children>
+        <BorderPane>
+            <top>
+                <HBox alignment="CENTER_RIGHT" styleClass="top-hbox">
+                    <children>
+                        <Button fx:id="hint" mnemonicParsing="false" styleClass="top-hbox-buttons" text="Suggerimento" />
+                        <Button fx:id="pause" mnemonicParsing="false" styleClass="top-hbox-buttons" text="Pausa" />
+
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </top>
+            <center>
+                <StackPane fx:id="centerStackPane">
+                    <!--Contenuto del puzzle-->
+                </StackPane>
+            </center>
+            <left>
+                <StackPane styleClass="left-stack-pane" BorderPane.alignment="CENTER">
+                    <children>
+                        <BorderPane>
+                            <top>
+                                <Label fx:id="title" alignment="TOP_CENTER" styleClass="title-label" BorderPane.alignment="TOP_CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" />
+                           </BorderPane.margin></Label>
+                            </top>
+                            <bottom>
+                                <HBox alignment="CENTER" styleClass="hbox-button-puzzle" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <Button fx:id="confirmButton" mnemonicParsing="false" styleClass="buttonPuzzle" text="Conferma" />
+                                        <Button fx:id="resetButton" mnemonicParsing="false" styleClass="buttonPuzzle" text=" Reset " />
+                                    </children>
+                                </HBox>
+                            </bottom>
+                            <center>
+                                <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="scroll-pane-puzzle" BorderPane.alignment="CENTER">
+                                    <content>
+                                        <Label fx:id="description" alignment="CENTER" maxWidth="Infinity" styleClass="description-text" wrapText="true" />
+                                    </content>
+                                </ScrollPane>
+                            </center>
+                        </BorderPane>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets right="5.0" />
+                    </BorderPane.margin>
+                </StackPane>
+            </left>
+            <StackPane.margin>
+                <Insets bottom="35.0" left="10.0" right="10.0" top="10.0" />
+            </StackPane.margin>
+        </BorderPane>
+    </children>
+</StackPane>

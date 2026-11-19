@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:id="stackHint" styleClass="stack-hint" stylesheets="@../styles/global.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iss.echoesofdeceit.controller.HintController">
+    <BorderPane>
+        <center>
+            <VBox fx:id="vboxHint" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="30" styleClass="vbox-hint">
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" style="-fx-font-size: 50px;" styleClass="title-label" text="Gia' esaminato" />
+                <Button fx:id="closeButton" styleClass="buttonPuzzle" text="Indietro" />
+            </VBox>
+        </center>
+    </BorderPane>
+</StackPane>
