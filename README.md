@@ -19,7 +19,13 @@ SDK: Oracle OpenJDK 23.0.1
 Pupella Benedetto
 
 
+
+
+
 --- 
+
+
+
 
 The Echoes of Deceit project set out with the goal of creating an investigative video game, developed entirely in the Java language. To achieve this, the tools and knowledge acquired in the field of Software Engineering and Security were applied, with the intent of offering users an engaging and well-designed gaming experience. Some key points that guided us during development:
 
